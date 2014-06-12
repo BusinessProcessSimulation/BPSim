@@ -6,17 +6,17 @@
 BPSim Version 1.0 is now available on [http://www.bpsim.org](http://www.bpsim.org).
 
 ----
-#WfMC Business Process Simulation Working Group (BPSWG)
+##WfMC Business Process Simulation Working Group (BPSWG)
 
-##BPSWG Chair(s):
+###BPSWG Chair(s):
  * Denis Gagne
  * Robert Shapiro
 
-##BPSWG Meta-model, Schema, Specification Document Editor(s):
+###BPSWG Meta-model, Schema, Specification Document Editor(s):
 * Simon Ringuette
 * Denis Gagne
 
-##Implementers' Guide
+###Implementers' Guide
    * Alberto Manuel
    * Tim Stephenson
    * Denis Gagne
