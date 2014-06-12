@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<semantic:definitions id="_1399929387037" name="Technical Support Process v1.0" targetNamespace="http://www.trisotech.com/definitions/_1399929387037" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:trisofeed="http://trisotech.com/feed" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:semantic="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:rss="http://purl.org/rss/2.0/" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <semantic:resource name="Front Office" id="resource_Front_Office"/>
+    <semantic:process isExecutable="false" id="WFP-40005-1">
+        <semantic:manualTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Request 1st level support" id="_10-235">
+            <semantic:incoming>_10-971</semantic:incoming>
+            <semantic:outgoing>_10-450</semantic:outgoing>
+            <semantic:performer>
+                <semantic:resourceRef>resource_Front_Office</semantic:resourceRef>
+            </semantic:performer>
+        </semantic:manualTask>
+        <semantic:startEvent name="Customer issue report" id="_10-42">
+            <semantic:outgoing>_10-108</semantic:outgoing>
+            <semantic:messageEventDefinition messageRef="Message_1399929387649"/>
+        </semantic:startEvent>
+        <semantic:manualTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Provide solution to customer" id="_10-138">
+            <semantic:incoming>_10-189</semantic:incoming>
+            <semantic:incoming>_10-454</semantic:incoming>
+            <semantic:outgoing>_10-217</semantic:outgoing>
+            <semantic:performer>
+                <semantic:resourceRef>resource_Front_Office</semantic:resourceRef>
+            </semantic:performer>
+        </semantic:manualTask>
+        <semantic:manualTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Inform customer the issue is going to be escalated" id="_10-920">
+            <semantic:incoming>_10-286</semantic:incoming>
+            <semantic:outgoing>_10-971</semantic:outgoing>
+            <semantic:performer>
+                <semantic:resourceRef>resource_Front_Office</semantic:resourceRef>
+            </semantic:performer>
+        </semantic:manualTask>
+        <semantic:manualTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Get issue description from customer" id="_10-57">
+            <semantic:incoming>_10-108</semantic:incoming>
+            <semantic:incoming>_10-456</semantic:incoming>
+            <semantic:outgoing>_10-136</semantic:outgoing>
+            <semantic:performer>
+                <semantic:resourceRef>resource_Front_Office</semantic:resourceRef>
+            </semantic:performer>
+        </semantic:manualTask>
+        <semantic:endEvent name="Customer issue resolved" id="_10-219">
+            <semantic:incoming>_10-233</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:intermediateCatchEvent parallelMultiple="false" name="Solution received from 1st level of support" id="_10-433">
+            <semantic:incoming>_10-450</semantic:incoming>
+            <semantic:outgoing>_10-454</semantic:outgoing>
+            <semantic:messageEventDefinition messageRef="Message_1399929387655"/>
+        </semantic:intermediateCatchEvent>
+        <semantic:exclusiveGateway gatewayDirection="Unspecified" name="" id="_10-114">
+            <semantic:incoming>_10-136</semantic:incoming>
+            <semantic:outgoing>_10-189</semantic:outgoing>
+            <semantic:outgoing>_10-286</semantic:outgoing>
+        </semantic:exclusiveGateway>
+        <semantic:exclusiveGateway gatewayDirection="Unspecified" name="" id="_10-195">
+            <semantic:incoming>_10-217</semantic:incoming>
+            <semantic:outgoing>_10-233</semantic:outgoing>
+            <semantic:outgoing>_10-456</semantic:outgoing>
+        </semantic:exclusiveGateway>
+        <semantic:sequenceFlow sourceRef="_10-42" targetRef="_10-57" name="" id="_10-108"/>
+        <semantic:sequenceFlow sourceRef="_10-57" targetRef="_10-114" name="" id="_10-136"/>
+        <semantic:sequenceFlow sourceRef="_10-114" targetRef="_10-138" name="Able to  provide solution" id="_10-189"/>
+        <semantic:sequenceFlow sourceRef="_10-138" targetRef="_10-195" name="" id="_10-217"/>
+        <semantic:sequenceFlow sourceRef="_10-195" targetRef="_10-219" name="Solution is effective" id="_10-233"/>
+        <semantic:sequenceFlow sourceRef="_10-114" targetRef="_10-920" name="Unable to  provide solution" id="_10-286"/>
+        <semantic:sequenceFlow sourceRef="_10-235" targetRef="_10-433" name="" id="_10-450"/>
+        <semantic:sequenceFlow sourceRef="_10-433" targetRef="_10-138" name="" id="_10-454"/>
+        <semantic:sequenceFlow sourceRef="_10-195" targetRef="_10-57" name="Solution is not effective" id="_10-456"/>
+        <semantic:sequenceFlow sourceRef="_10-920" targetRef="_10-235" name="" id="_10-971"/>
+    </semantic:process>
+    <semantic:resource name="1st Level Techical Support Agent" id="resource_1st_Level_Techical_Support_Agent"/>
+    <semantic:process isExecutable="false" id="WFP-40005-2">
+        <semantic:endEvent name="Issue handled by 1st level support" id="_10-577">
+            <semantic:incoming>_10-591</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:exclusiveGateway gatewayDirection="Unspecified" name="" id="_10-356">
+            <semantic:incoming>_10-378</semantic:incoming>
+            <semantic:outgoing>_10-431</semantic:outgoing>
+            <semantic:outgoing>_10-509</semantic:outgoing>
+        </semantic:exclusiveGateway>
+        <semantic:manualTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Find solution 1st level issue" id="_10-303">
+            <semantic:incoming>_10-354</semantic:incoming>
+            <semantic:outgoing>_10-378</semantic:outgoing>
+            <semantic:performer>
+                <semantic:resourceRef>resource_1st_Level_Techical_Support_Agent</semantic:resourceRef>
+            </semantic:performer>
+        </semantic:manualTask>
+        <semantic:startEvent name="1st level Issue" id="_10-288">
+            <semantic:outgoing>_10-354</semantic:outgoing>
+            <semantic:messageEventDefinition messageRef="Message_1399929387654"/>
+        </semantic:startEvent>
+        <semantic:manualTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Provide solution to Front Office" id="_10-380">
+            <semantic:incoming>_10-431</semantic:incoming>
+            <semantic:incoming>_10-744</semantic:incoming>
+            <semantic:outgoing>_10-591</semantic:outgoing>
+            <semantic:performer>
+                <semantic:resourceRef>resource_1st_Level_Techical_Support_Agent</semantic:resourceRef>
+            </semantic:performer>
+        </semantic:manualTask>
+        <semantic:manualTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Request 2nd level support" id="_10-458">
+            <semantic:incoming>_10-509</semantic:incoming>
+            <semantic:outgoing>_10-740</semantic:outgoing>
+            <semantic:performer>
+                <semantic:resourceRef>resource_1st_Level_Techical_Support_Agent</semantic:resourceRef>
+            </semantic:performer>
+        </semantic:manualTask>
+        <semantic:intermediateCatchEvent parallelMultiple="false" name="Solution received from 2nd level of support" id="_10-723">
+            <semantic:incoming>_10-740</semantic:incoming>
+            <semantic:outgoing>_10-744</semantic:outgoing>
+            <semantic:messageEventDefinition messageRef="Message_1399929387657"/>
+        </semantic:intermediateCatchEvent>
+        <semantic:sequenceFlow sourceRef="_10-288" targetRef="_10-303" name="" id="_10-354"/>
+        <semantic:sequenceFlow sourceRef="_10-303" targetRef="_10-356" name="" id="_10-378"/>
+        <semantic:sequenceFlow sourceRef="_10-356" targetRef="_10-380" name="Able to provide  1st level solution" id="_10-431"/>
+        <semantic:sequenceFlow sourceRef="_10-356" targetRef="_10-458" name="Unable to provide 1st level solution" id="_10-509"/>
+        <semantic:sequenceFlow sourceRef="_10-380" targetRef="_10-577" name="" id="_10-591"/>
+        <semantic:sequenceFlow sourceRef="_10-458" targetRef="_10-723" name="" id="_10-740"/>
+        <semantic:sequenceFlow sourceRef="_10-723" targetRef="_10-380" name="" id="_10-744"/>
+    </semantic:process>
+    <semantic:resource name="Supplier" id="resource_Supplier"/>
+    <semantic:process isExecutable="false" id="WFP-40005-3">
+        <semantic:manualTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Find solution supplier issue" id="_10-794">
+            <semantic:incoming>_10-845</semantic:incoming>
+            <semantic:outgoing>_10-898</semantic:outgoing>
+            <semantic:performer>
+                <semantic:resourceRef>resource_Supplier</semantic:resourceRef>
+            </semantic:performer>
+        </semantic:manualTask>
+        <semantic:startEvent name="Supplier Issue" id="_10-781">
+            <semantic:outgoing>_10-845</semantic:outgoing>
+            <semantic:messageEventDefinition messageRef="Message_1399929387659"/>
+        </semantic:startEvent>
+        <semantic:manualTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Provide solution to 2nd level support" id="_10-847">
+            <semantic:incoming>_10-898</semantic:incoming>
+            <semantic:outgoing>_10-916</semantic:outgoing>
+            <semantic:performer>
+                <semantic:resourceRef>resource_Supplier</semantic:resourceRef>
+            </semantic:performer>
+        </semantic:manualTask>
+        <semantic:endEvent name="Issue handled by supplier" id="_10-902">
+            <semantic:incoming>_10-916</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:sequenceFlow sourceRef="_10-781" targetRef="_10-794" name="" id="_10-845"/>
+        <semantic:sequenceFlow sourceRef="_10-794" targetRef="_10-847" name="" id="_10-898"/>
+        <semantic:sequenceFlow sourceRef="_10-847" targetRef="_10-902" name="" id="_10-916"/>
+    </semantic:process>
+    <semantic:resource name="2nd Level Techical Support Agent" id="resource_2nd_Level_Techical_Support_Agent"/>
+    <semantic:process isExecutable="false" id="WFP-40005-5">
+        <semantic:exclusiveGateway gatewayDirection="Unspecified" name="" id="_10-593">
+            <semantic:incoming>_10-615</semantic:incoming>
+            <semantic:outgoing>_10-668</semantic:outgoing>
+            <semantic:outgoing>_10-721</semantic:outgoing>
+        </semantic:exclusiveGateway>
+        <semantic:manualTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Request supplier support" id="_10-670">
+            <semantic:incoming>_10-721</semantic:incoming>
+            <semantic:outgoing>_10-777</semantic:outgoing>
+            <semantic:performer>
+                <semantic:resourceRef>resource_2nd_Level_Techical_Support_Agent</semantic:resourceRef>
+            </semantic:performer>
+        </semantic:manualTask>
+        <semantic:manualTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Provide solution to 1st level support" id="_10-617">
+            <semantic:incoming>_10-668</semantic:incoming>
+            <semantic:incoming>_10-779</semantic:incoming>
+            <semantic:outgoing>_10-977</semantic:outgoing>
+            <semantic:performer>
+                <semantic:resourceRef>resource_2nd_Level_Techical_Support_Agent</semantic:resourceRef>
+            </semantic:performer>
+        </semantic:manualTask>
+        <semantic:intermediateCatchEvent parallelMultiple="false" name="Solution received from supplier" id="_10-760">
+            <semantic:incoming>_10-777</semantic:incoming>
+            <semantic:outgoing>_10-779</semantic:outgoing>
+            <semantic:messageEventDefinition messageRef="Message_1399929387658"/>
+        </semantic:intermediateCatchEvent>
+        <semantic:manualTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Find solution 2nd level issue" id="_10-526">
+            <semantic:incoming>_10-975</semantic:incoming>
+            <semantic:outgoing>_10-615</semantic:outgoing>
+            <semantic:performer>
+                <semantic:resourceRef>resource_2nd_Level_Techical_Support_Agent</semantic:resourceRef>
+            </semantic:performer>
+        </semantic:manualTask>
+        <semantic:startEvent name="2nd  level Issue" id="_10-511">
+            <semantic:outgoing>_10-975</semantic:outgoing>
+            <semantic:messageEventDefinition messageRef="Message_1399929387656"/>
+        </semantic:startEvent>
+        <semantic:endEvent name="Issue handled by  2 nd level support" id="_10-746">
+            <semantic:incoming>_10-977</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:sequenceFlow sourceRef="_10-526" targetRef="_10-593" name="" id="_10-615"/>
+        <semantic:sequenceFlow sourceRef="_10-593" targetRef="_10-617" name="Able to provide  2nd level solution" id="_10-668"/>
+        <semantic:sequenceFlow sourceRef="_10-593" targetRef="_10-670" name="Unable to provide 2nd level solution" id="_10-721"/>
+        <semantic:sequenceFlow sourceRef="_10-670" targetRef="_10-760" name="" id="_10-777"/>
+        <semantic:sequenceFlow sourceRef="_10-760" targetRef="_10-617" name="" id="_10-779"/>
+        <semantic:sequenceFlow sourceRef="_10-511" targetRef="_10-526" name="" id="_10-975"/>
+        <semantic:sequenceFlow sourceRef="_10-617" targetRef="_10-746" name="" id="_10-977"/>
+    </semantic:process>
+    <semantic:message id="Message_1399929387649"/>
+    <semantic:message id="Message_1399929387650"/>
+    <semantic:message id="Message_1399929387651"/>
+    <semantic:message id="Message_1399929387652"/>
+    <semantic:message id="Message_1399929387653"/>
+    <semantic:message id="Message_1399929387654"/>
+    <semantic:message id="Message_1399929387655"/>
+    <semantic:message id="Message_1399929387656"/>
+    <semantic:message id="Message_1399929387657"/>
+    <semantic:message id="Message_1399929387658"/>
+    <semantic:message id="Message_1399929387659"/>
+    <semantic:message id="Message_1399929387660"/>
+    <semantic:collaboration id="C1399929387648">
+        <semantic:participant name="Customer" id="_10-1"/>
+        <semantic:participant name="Front Office" processRef="WFP-40005-1" id="_10-10"/>
+        <semantic:participant name="1st Level Techical Support Agent" processRef="WFP-40005-2" id="_10-18"/>
+        <semantic:participant name="2nd Level Techical Support Agent" processRef="WFP-40005-5" id="_10-26"/>
+        <semantic:participant name="Supplier" processRef="WFP-40005-3" id="_10-34"/>
+        <semantic:messageFlow messageRef="Message_1399929387649" name="" sourceRef="_10-1" targetRef="_10-42" id="_10-55"/>
+        <semantic:messageFlow messageRef="Message_1399929387650" name="" sourceRef="_10-57" targetRef="_10-1" id="_10-110"/>
+        <semantic:messageFlow messageRef="Message_1399929387651" name="" sourceRef="_10-1" targetRef="_10-57" id="_10-112"/>
+        <semantic:messageFlow messageRef="Message_1399929387652" name="" sourceRef="_10-138" targetRef="_10-1" id="_10-191"/>
+        <semantic:messageFlow messageRef="Message_1399929387653" name="" sourceRef="_10-1" targetRef="_10-138" id="_10-193"/>
+        <semantic:messageFlow messageRef="Message_1399929387654" name="" sourceRef="_10-235" targetRef="_10-288" id="_10-301"/>
+        <semantic:messageFlow messageRef="Message_1399929387655" name="" sourceRef="_10-380" targetRef="_10-433" id="_10-452"/>
+        <semantic:messageFlow messageRef="Message_1399929387656" name="" sourceRef="_10-458" targetRef="_10-511" id="_10-524"/>
+        <semantic:messageFlow messageRef="Message_1399929387657" name="" sourceRef="_10-617" targetRef="_10-723" id="_10-742"/>
+        <semantic:messageFlow messageRef="Message_1399929387658" name="" sourceRef="_10-847" targetRef="_10-760" id="_10-900"/>
+        <semantic:messageFlow messageRef="Message_1399929387659" name="" sourceRef="_10-670" targetRef="_10-781" id="_10-918"/>
+        <semantic:messageFlow messageRef="Message_1399929387660" name="" sourceRef="_10-920" targetRef="_10-1" id="_10-973"/>
+    </semantic:collaboration>
+    <bpmndi:BPMNDiagram documentation="" id="_40005" name="Scenario 1" resolution="96.00000267028808">
+        <bpmndi:BPMNPlane bpmnElement="C1399929387648">
+            <bpmndi:BPMNShape bpmnElement="_10-1" isHorizontal="true" id="S1399929387615__10-1">
+                <dc:Bounds height="72.0" width="936.0" x="288.0" y="144.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="49.2026760725625" width="12.804751171874997" x="292.0" y="155.0"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-10" isHorizontal="true" id="S1399929387617__10-10">
+                <dc:Bounds height="354.0" width="936.0" x="288.0" y="258.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="58.686440721" width="12.804751171874997" x="292.0" y="405.0"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-18" isHorizontal="true" id="S1399929387618__10-18">
+                <dc:Bounds height="240.0" width="936.0" x="288.0" y="672.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="159.50321318193755" width="12.804751171874997" x="292.0" y="712.0"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-26" isHorizontal="true" id="S1399929387619__10-26">
+                <dc:Bounds height="246.0" width="936.0" x="288.0" y="966.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="163.0708401350625" width="12.804751171874997" x="292.0" y="1007.0"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-34" isHorizontal="true" id="S1399929387620__10-34">
+                <dc:Bounds height="168.0" width="936.0" x="288.0" y="1260.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="42.1033108381875" width="12.804751171874997" x="292.0" y="1322.0"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-235" id="S1399929387621__10-235">
+                <dc:Bounds height="68.0" width="83.0" x="759.0" y="476.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="38.404653515625" width="72.33333333333334" x="764.3333333333334" y="490.79767324218744"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-42" id="S1399929387622__10-42">
+                <dc:Bounds height="30.0" width="30.0" x="345.0" y="495.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="312.5333333333333" y="530.3333333333334"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-138" id="S1399929387623__10-138">
+                <dc:Bounds height="68.0" width="83.0" x="853.0" y="306.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="38.404653515625" width="72.33333333333334" x="858.3333333333334" y="320.79767324218744"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-920" id="S1399929387624__10-920">
+                <dc:Bounds height="68.0" width="83.0" x="640.0" y="476.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="64.00455585937502" width="72.33333333333334" x="645.3333333333334" y="477.9977220703125"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-57" id="S1399929387625__10-57">
+                <dc:Bounds height="68.0" width="83.0" x="411.0" y="476.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="51.204604687499994" width="72.33333333333334" x="416.3333333333333" y="484.39769765625"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-219" id="S1399929387626__10-219">
+                <dc:Bounds height="32.0" width="32.0" x="1149.0" y="324.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="1117.5333333333333" y="361.3333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-433" id="S1399929387627__10-433">
+                <dc:Bounds height="32.0" width="32.0" x="878.0" y="494.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="38.404653515625" width="94.93333333333335" x="846.5333333333334" y="531.3333333333334"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-114" isMarkerVisible="true" id="S1399929387628__10-114">
+                <dc:Bounds height="42.0" width="42.0" x="519.0" y="489.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-195" isMarkerVisible="true" id="S1399929387629__10-195">
+                <dc:Bounds height="42.0" width="42.0" x="996.0" y="319.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-577" id="S1399929387630__10-577">
+                <dc:Bounds height="32.0" width="32.0" x="1149.0" y="728.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="1117.5333333333333" y="765.3333333333334"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-356" isMarkerVisible="true" id="S1399929387631__10-356">
+                <dc:Bounds height="42.0" width="42.0" x="519.0" y="723.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-303" id="S1399929387632__10-303">
+                <dc:Bounds height="68.0" width="83.0" x="403.0" y="710.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="38.404653515625" width="72.33333333333334" x="408.3333333333333" y="724.7976732421876"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-288" id="S1399929387633__10-288">
+                <dc:Bounds height="30.0" width="30.0" x="345.0" y="729.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="12.804751171875008" width="94.93333333333335" x="312.5333333333333" y="764.3333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-380" id="S1399929387634__10-380">
+                <dc:Bounds height="68.0" width="83.0" x="853.0" y="710.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="38.404653515625" width="72.33333333333334" x="858.3333333333334" y="724.7976732421876"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-458" id="S1399929387635__10-458">
+                <dc:Bounds height="68.0" width="83.0" x="640.0" y="806.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="38.404653515625" width="72.33333333333334" x="645.3333333333334" y="820.7976732421876"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-723" id="S1399929387636__10-723">
+                <dc:Bounds height="32.0" width="32.0" x="878.0" y="824.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="38.404653515625" width="94.93333333333335" x="846.5333333333334" y="861.3333333333334"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-794" id="S1399929387637__10-794">
+                <dc:Bounds height="68.0" width="83.0" x="546.0" y="1310.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="51.204604687499994" width="72.33333333333334" x="551.3333333333334" y="1318.3976976562499"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-781" id="S1399929387638__10-781">
+                <dc:Bounds height="30.0" width="30.0" x="348.0" y="1329.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="12.804751171875008" width="94.93333333333335" x="315.5333333333333" y="1364.3333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-847" id="S1399929387639__10-847">
+                <dc:Bounds height="68.0" width="83.0" x="853.0" y="1310.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="51.204604687499994" width="72.33333333333334" x="858.3333333333334" y="1318.3976976562499"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-902" id="S1399929387640__10-902">
+                <dc:Bounds height="32.0" width="32.0" x="1149.0" y="1328.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="1117.5333333333333" y="1365.333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-593" isMarkerVisible="true" id="S1399929387641__10-593">
+                <dc:Bounds height="42.0" width="42.0" x="519.0" y="1025.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-670" id="S1399929387642__10-670">
+                <dc:Bounds height="68.0" width="83.0" x="640.0" y="1108.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="38.404653515625" width="72.33333333333334" x="645.3333333333334" y="1122.7976732421876"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-617" id="S1399929387643__10-617">
+                <dc:Bounds height="68.0" width="83.0" x="853.0" y="1012.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="51.204604687499994" width="72.33333333333334" x="858.3333333333334" y="1020.39769765625"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-760" id="S1399929387644__10-760">
+                <dc:Bounds height="32.0" width="32.0" x="878.0" y="1126.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="846.5333333333334" y="1163.333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-526" id="S1399929387645__10-526">
+                <dc:Bounds height="68.0" width="83.0" x="403.0" y="1012.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="51.204604687499994" width="72.33333333333334" x="408.3333333333333" y="1020.39769765625"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-511" id="S1399929387646__10-511">
+                <dc:Bounds height="30.0" width="30.0" x="345.0" y="1031.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="12.804751171875008" width="94.93333333333335" x="312.5333333333333" y="1066.3333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_10-746" id="S1399929387647__10-746">
+                <dc:Bounds height="32.0" width="32.0" x="1149.0" y="1030.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="1117.5333333333333" y="1067.333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge bpmnElement="_10-779" id="E1399929387661__10-779">
+                <di:waypoint x="894.0" y="1126.0"/>
+                <di:waypoint x="894.0" y="1080.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-615" id="E1399929387662__10-615">
+                <di:waypoint x="486.0" y="1046.0"/>
+                <di:waypoint x="519.0" y="1046.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-916" id="E1399929387663__10-916">
+                <di:waypoint x="936.0" y="1344.0"/>
+                <di:waypoint x="1149.0" y="1344.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-777" id="E1399929387664__10-777">
+                <di:waypoint x="723.0" y="1142.0"/>
+                <di:waypoint x="878.0" y="1142.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-452" id="E1399929387665__10-452">
+                <di:waypoint x="894.0" y="710.0"/>
+                <di:waypoint x="894.0" y="526.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-191" id="E1399929387666__10-191">
+                <di:waypoint x="880.0" y="306.0"/>
+                <di:waypoint x="880.0" y="288.0"/>
+                <di:waypoint x="882.0" y="288.0"/>
+                <di:waypoint x="882.0" y="216.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-108" id="E1399929387667__10-108">
+                <di:waypoint x="375.0" y="510.0"/>
+                <di:waypoint x="411.0" y="510.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-301" id="E1399929387668__10-301">
+                <di:waypoint x="800.0" y="544.0"/>
+                <di:waypoint x="800.0" y="574.0"/>
+                <di:waypoint x="360.0" y="574.0"/>
+                <di:waypoint x="360.0" y="729.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-450" id="E1399929387669__10-450">
+                <di:waypoint x="842.0" y="510.0"/>
+                <di:waypoint x="878.0" y="510.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-431" id="E1399929387670__10-431">
+                <di:waypoint x="560.0" y="744.0"/>
+                <di:waypoint x="853.0" y="744.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="665.5333333333334" y="731.197648828125"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-456" id="E1399929387671__10-456">
+                <di:waypoint x="1016.0" y="361.0"/>
+                <di:waypoint x="1016.0" y="562.0"/>
+                <di:waypoint x="898.0" y="562.0"/>
+                <di:waypoint x="804.0" y="562.0"/>
+                <di:waypoint x="452.0" y="562.0"/>
+                <di:waypoint x="452.0" y="544.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="801.0588277374833" y="549.197648828125"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-193" id="E1399929387672__10-193">
+                <di:waypoint x="910.0" y="216.0"/>
+                <di:waypoint x="910.0" y="234.0"/>
+                <di:waypoint x="908.0" y="234.0"/>
+                <di:waypoint x="908.0" y="306.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-454" id="E1399929387673__10-454">
+                <di:waypoint x="894.0" y="494.0"/>
+                <di:waypoint x="894.0" y="374.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-973" id="E1399929387674__10-973">
+                <di:waypoint x="681.0" y="476.0"/>
+                <di:waypoint x="681.0" y="216.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-189" id="E1399929387675__10-189">
+                <di:waypoint x="540.0" y="489.0"/>
+                <di:waypoint x="540.0" y="340.0"/>
+                <di:waypoint x="677.0" y="340.0"/>
+                <di:waypoint x="853.0" y="340.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="562.0652958982554" y="327.1976488281252"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-524" id="E1399929387676__10-524">
+                <di:waypoint x="681.0" y="874.0"/>
+                <di:waypoint x="681.0" y="892.0"/>
+                <di:waypoint x="360.0" y="892.0"/>
+                <di:waypoint x="360.0" y="1031.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-971" id="E1399929387677__10-971">
+                <di:waypoint x="723.0" y="510.0"/>
+                <di:waypoint x="759.0" y="510.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-217" id="E1399929387678__10-217">
+                <di:waypoint x="936.0" y="340.0"/>
+                <di:waypoint x="996.0" y="340.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-233" id="E1399929387679__10-233">
+                <di:waypoint x="1037.0" y="340.0"/>
+                <di:waypoint x="1149.0" y="340.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="12.804751171875008" width="94.93333333333335" x="1045.533333333333" y="333.59762441406247"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-55" id="E1399929387680__10-55">
+                <di:waypoint x="358.0" y="216.0"/>
+                <di:waypoint x="358.0" y="234.0"/>
+                <di:waypoint x="360.0" y="234.0"/>
+                <di:waypoint x="360.0" y="495.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-509" id="E1399929387681__10-509">
+                <di:waypoint x="540.0" y="765.0"/>
+                <di:waypoint x="540.0" y="840.0"/>
+                <di:waypoint x="640.0" y="840.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="542.5333333333335" y="827.197648828125"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-918" id="E1399929387682__10-918">
+                <di:waypoint x="681.0" y="1176.0"/>
+                <di:waypoint x="681.0" y="1194.0"/>
+                <di:waypoint x="363.0" y="1194.0"/>
+                <di:waypoint x="363.0" y="1329.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-977" id="E1399929387683__10-977">
+                <di:waypoint x="936.0" y="1046.0"/>
+                <di:waypoint x="1149.0" y="1046.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-354" id="E1399929387684__10-354">
+                <di:waypoint x="375.0" y="744.0"/>
+                <di:waypoint x="403.0" y="744.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-975" id="E1399929387685__10-975">
+                <di:waypoint x="375.0" y="1046.0"/>
+                <di:waypoint x="403.0" y="1046.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-378" id="E1399929387686__10-378">
+                <di:waypoint x="486.0" y="744.0"/>
+                <di:waypoint x="519.0" y="744.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-898" id="E1399929387687__10-898">
+                <di:waypoint x="629.0" y="1344.0"/>
+                <di:waypoint x="853.0" y="1344.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-740" id="E1399929387688__10-740">
+                <di:waypoint x="723.0" y="840.0"/>
+                <di:waypoint x="878.0" y="840.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-742" id="E1399929387689__10-742">
+                <di:waypoint x="894.0" y="1012.0"/>
+                <di:waypoint x="894.0" y="856.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-721" id="E1399929387690__10-721">
+                <di:waypoint x="540.0" y="1067.0"/>
+                <di:waypoint x="540.0" y="1142.0"/>
+                <di:waypoint x="640.0" y="1142.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="542.7901566979942" y="1129.6976238299999"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-900" id="E1399929387691__10-900">
+                <di:waypoint x="894.0" y="1310.0"/>
+                <di:waypoint x="894.0" y="1158.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-112" id="E1399929387692__10-112">
+                <di:waypoint x="466.0" y="216.0"/>
+                <di:waypoint x="466.0" y="476.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-744" id="E1399929387693__10-744">
+                <di:waypoint x="894.0" y="824.0"/>
+                <di:waypoint x="894.0" y="778.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-668" id="E1399929387694__10-668">
+                <di:waypoint x="560.0" y="1046.0"/>
+                <di:waypoint x="853.0" y="1046.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="665.5333333333334" y="1033.1976488281248"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-110" id="E1399929387695__10-110">
+                <di:waypoint x="439.0" y="476.0"/>
+                <di:waypoint x="439.0" y="458.0"/>
+                <di:waypoint x="437.0" y="458.0"/>
+                <di:waypoint x="437.0" y="216.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-286" id="E1399929387696__10-286">
+                <di:waypoint x="560.0" y="510.0"/>
+                <di:waypoint x="640.0" y="510.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616">
+                    <dc:Bounds height="25.604702343750013" width="94.93333333333335" x="559.5333333333335" y="497.19764882812495"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-136" id="E1399929387697__10-136">
+                <di:waypoint x="494.0" y="510.0"/>
+                <di:waypoint x="519.0" y="510.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-845" id="E1399929387698__10-845">
+                <di:waypoint x="378.0" y="1344.0"/>
+                <di:waypoint x="546.0" y="1344.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_10-591" id="E1399929387699__10-591">
+                <di:waypoint x="936.0" y="744.0"/>
+                <di:waypoint x="1149.0" y="744.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1399929387616"/>
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+        <bpmndi:BPMNLabelStyle id="LS1399929387616">
+            <dc:Font isBold="false" isItalic="false" isStrikeThrough="false" isUnderline="false" name="Arial" size="8.0"/>
+        </bpmndi:BPMNLabelStyle>
+    </bpmndi:BPMNDiagram>
+    <semantic:relationship type="BPSimData">
+        <semantic:extensionElements>
+            <bpsim:BPSimData>
+                <bpsim:Scenario id="S1" name="1 - Control perspective">
+                    <bpsim:ScenarioParameters baseTimeUnit="min" replication="3">
+                        <bpsim:Duration>
+                            <bpsim:DurationParameter value="P1M"/>
+                        </bpsim:Duration>
+                    </bpsim:ScenarioParameters>
+                    <bpsim:ElementParameters elementRef="WFP-40005-1">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:ResultRequest>min</bpsim:ResultRequest>
+                                <bpsim:ResultRequest>max</bpsim:ResultRequest>
+                                <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-42">
+                        <bpsim:ControlParameters>
+                            <bpsim:InterTriggerTimer>
+                                <bpsim:TriangularDistribution max="2.5" min="0.35" mode="2"/>
+                            </bpsim:InterTriggerTimer>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-781">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-511">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-288">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                </bpsim:Scenario>
+                <bpsim:Scenario id="S2" inherits="S1" name="2 - Temporal perspective">
+                    <bpsim:ElementParameters elementRef="_10-57">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:TruncatedNormalDistribution max="1000" mean="4" min="0" standardDeviation="0.5"/>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-920">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:TruncatedNormalDistribution max="1000" mean="1" min="0" standardDeviation="0.5"/>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-235">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:DurationParameter value="PT30S"/>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-138">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:TruncatedNormalDistribution max="1000" mean="10" min="0" standardDeviation="2.5"/>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-303">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:TruncatedNormalDistribution max="1000" mean="4" min="0" standardDeviation="0.5"/>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-458">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:DurationParameter value="PT30S"/>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-380">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:TruncatedNormalDistribution max="1000" mean="1" min="0" standardDeviation="0.5"/>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-526">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:TruncatedNormalDistribution max="1000" mean="7" min="0" standardDeviation="0.5"/>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-670">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:TruncatedNormalDistribution max="1000" mean="3" min="0" standardDeviation="0.5"/>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-617">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:TruncatedNormalDistribution max="1000" mean="1" min="0" standardDeviation="0.5"/>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-794">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:TruncatedNormalDistribution max="1000" mean="300" min="0" standardDeviation="30"/>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-847">
+                        <bpsim:TimeParameters>
+                            <bpsim:ProcessingTime>
+                                <bpsim:TruncatedNormalDistribution max="1000" mean="2" min="0" standardDeviation="0.5"/>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-189">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="60"/>
+                            </bpsim:Probability>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-286">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="40"/>
+                            </bpsim:Probability>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-233">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="15"/>
+                            </bpsim:Probability>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-456">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="85"/>
+                            </bpsim:Probability>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-431">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="70"/>
+                            </bpsim:Probability>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-509">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="30"/>
+                            </bpsim:Probability>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-668">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="80"/>
+                            </bpsim:Probability>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-721">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="20"/>
+                            </bpsim:Probability>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-42">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-219">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-577">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-746">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-902">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-781">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-511">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_10-288">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                </bpsim:Scenario>
+                <bpsim:Scenario id="S3" inherits="S1" name="3 - Resource perspective">
+                    <bpsim:ElementParameters elementRef="resource_Front_Office">
+                        <bpsim:TimeParameters>
+                            <bpsim:WaitTime>
+                                <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                            </bpsim:WaitTime>
+                            <bpsim:ProcessingTime>
+                                <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                        <bpsim:ResourceParameters>
+                            <bpsim:Quantity>
+                                <bpsim:NumericParameter value="0"/>
+                                <bpsim:NumericParameter validFor="C1" value="200"/>
+                                <bpsim:NumericParameter validFor="C2" value="90"/>
+                                <bpsim:NumericParameter validFor="C3" value="130"/>
+                                <bpsim:NumericParameter validFor="C4" value="60"/>
+                                <bpsim:NumericParameter validFor="C5" value="150"/>
+                                <bpsim:NumericParameter validFor="C6" value="100"/>
+                                <bpsim:NumericParameter validFor="C7" value="40"/>
+                            </bpsim:Quantity>
+                        </bpsim:ResourceParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="resource_1st_Level_Techical_Support_Agent">
+                        <bpsim:TimeParameters>
+                            <bpsim:WaitTime>
+                                <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                            </bpsim:WaitTime>
+                            <bpsim:ProcessingTime>
+                                <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                        <bpsim:ResourceParameters>
+                            <bpsim:Quantity>
+                                <bpsim:NumericParameter value="0"/>
+                                <bpsim:NumericParameter validFor="C1" value="3"/>
+                                <bpsim:NumericParameter validFor="C2" value="3"/>
+                                <bpsim:NumericParameter validFor="C3" value="3"/>
+                                <bpsim:NumericParameter validFor="C4" value="3"/>
+                                <bpsim:NumericParameter validFor="C5" value="3"/>
+                                <bpsim:NumericParameter validFor="C6" value="3"/>
+                            </bpsim:Quantity>
+                        </bpsim:ResourceParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="resource_2nd_Level_Techical_Support_Agent">
+                        <bpsim:TimeParameters>
+                            <bpsim:WaitTime>
+                                <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                            </bpsim:WaitTime>
+                            <bpsim:ProcessingTime>
+                                <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                        <bpsim:ResourceParameters>
+                            <bpsim:Quantity>
+                                <bpsim:NumericParameter value="0"/>
+                                <bpsim:NumericParameter validFor="C1" value="2"/>
+                                <bpsim:NumericParameter validFor="C2" value="2"/>
+                                <bpsim:NumericParameter validFor="C3" value="2"/>
+                                <bpsim:NumericParameter validFor="C4" value="2"/>
+                                <bpsim:NumericParameter validFor="C5" value="2"/>
+                                <bpsim:NumericParameter validFor="C6" value="2"/>
+                            </bpsim:Quantity>
+                        </bpsim:ResourceParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="resource_Supplier">
+                        <bpsim:TimeParameters>
+                            <bpsim:WaitTime>
+                                <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                            </bpsim:WaitTime>
+                            <bpsim:ProcessingTime>
+                                <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                            </bpsim:ProcessingTime>
+                        </bpsim:TimeParameters>
+                        <bpsim:ResourceParameters>
+                            <bpsim:Quantity>
+                                <bpsim:NumericParameter value="0"/>
+                                <bpsim:NumericParameter validFor="C8" value="1"/>
+                            </bpsim:Quantity>
+                        </bpsim:ResourceParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:Calendar id="C1" name="shift-6-9am">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202424
+UID:1356035064823@localhost
+DTSTART:20121220T060000
+DTEND:20121220T090000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+                    <bpsim:Calendar id="C2" name="shift-9-noon">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202500
+UID:1356035100473@localhost
+DTSTART:20121220T090000
+DTEND:20121220T120000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+                    <bpsim:Calendar id="C3" name="shift-noon-3pm">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202529
+UID:1356035129707@localhost
+DTSTART:20121220T120000
+DTEND:20121220T150000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+                    <bpsim:Calendar id="C4" name="shift-3-6pm">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202631
+UID:1356035191095@localhost
+DTSTART:20121220T150000
+DTEND:20121220T180000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+                    <bpsim:Calendar id="C5" name="shift-6-10pm">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202706
+UID:1356035226921@localhost
+DTSTART:20121220T180000
+DTEND:20121220T220000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+                    <bpsim:Calendar id="C6" name="shift-10-1am">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202726
+UID:1356035246845@localhost
+DTSTART:20121220T100000
+DTEND:20121221T010000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+                    <bpsim:Calendar id="C7" name="shift-1-6am">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202752
+UID:1356035272706@localhost
+DTSTART:20121220T010000
+DTEND:20121220T060000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+                    <bpsim:Calendar id="C8" name="shift-9am-10pm-weekdays">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T203015
+UID:1356035303891@localhost
+DTSTART:20121220T090000
+DTEND:20121220T220000
+RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+                </bpsim:Scenario>
+            </bpsim:BPSimData>
+        </semantic:extensionElements>
+        <semantic:source>_1399929387037</semantic:source>
+        <semantic:target>_1399929387037</semantic:target>
+    </semantic:relationship>
+</semantic:definitions>
+

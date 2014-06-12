@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Package Id="1364754651479" Name="Loan Process v0.20" xmlns="http://www.wfmc.org/2009/XPDL2.2">
+    <PackageHeader>
+        <XPDLVersion>
+			2.2
+		</XPDLVersion>
+        <Vendor>Trisotech (BPMN 2.0 - 4.0)</Vendor>
+        <Created>2013-03-31T14:30:51.479-04:00</Created>
+        <LayoutInfo PixelsPerMillimeter="3.7795277"/>
+    </PackageHeader>
+    <Pages>
+        <Page Height="1539.0" Id="6" Name="Loan Origination" Width="2197.0"/>
+    </Pages>
+    <Pools>
+        <Pool BoundaryVisible="false" Id="1364754651588" Process="6">
+            <Lanes>
+                <Lane Id="_81354509-EC39-44E5-A266-4286CBB1EFAC" Name="Loan officer" Orientation="HORIZONTAL">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="471.0" PageId="6" Shape="Lane" ToolId="Trisotech_Visio" Width="1524.0">
+                            <Coordinates XCoordinate="384.0" YCoordinate="120.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Lane>
+                <Lane Id="_B634801B-C2C5-4C55-A4AD-17882B1E87F2" Name="Title Researcher" Orientation="HORIZONTAL">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="168.0" PageId="6" Shape="Lane" ToolId="Trisotech_Visio" Width="1524.0">
+                            <Coordinates XCoordinate="384.0" YCoordinate="591.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Lane>
+                <Lane Id="_357D85DD-EB4D-4D21-AAD7-D9895DA1633B" Name="Loan Underwriter" Orientation="HORIZONTAL">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="282.0" PageId="6" Shape="Lane" ToolId="Trisotech_Visio" Width="1524.0">
+                            <Coordinates XCoordinate="384.0" YCoordinate="759.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Lane>
+            </Lanes>
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo Height="921.0" IsVisible="false" PageId="6" ToolId="Trisotech_Visio" Width="1554.0">
+                    <Coordinates XCoordinate="354.0" YCoordinate="120.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+    </Pools>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="6">
+            <ProcessHeader/>
+            <DataFields>
+                <DataField Id="DF1364754651589" IsArray="false">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="_C77E51FD-9C1B-40F7-9273-100E47069B11" Name="">
+                    <Route GatewayDirection="Unspecified" GatewayType="Parallel"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="42.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Gateway" ToolId="Trisotech_Visio" Width="42.0">
+                            <Coordinates XCoordinate="1044.0" YCoordinate="309.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_6E1A332C-9187-4C4A-BD0F-27167F940786" Name="Loan Request Approved">
+                    <Event>
+                        <EndEvent Result="None"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="End Event" ToolId="Trisotech_Visio" Width="32.0">
+                            <Coordinates XCoordinate="1818.0" YCoordinate="411.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_F366069F-C180-4D69-B2BF-4124649EC36F" IsForCompensation="false" Name="Close-out Approval" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskUser Implementation="WebService"/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Task" ToolId="Trisotech_Visio" Width="105.0">
+                            <Coordinates XCoordinate="1664.0" YCoordinate="393.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_C94EFA57-E605-4564-BFC4-22A84C660A6A" IsForCompensation="false" Name="Review Loan Application" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskUser Implementation="WebService"/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Task" ToolId="Trisotech_Visio" Width="105.0">
+                            <Coordinates XCoordinate="1137.0" YCoordinate="296.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4" Name="">
+                    <Route GatewayDirection="Unspecified" GatewayType="Parallel"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="42.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Gateway" ToolId="Trisotech_Visio" Width="42.0">
+                            <Coordinates XCoordinate="705.0" YCoordinate="309.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6" IsForCompensation="false" Name="Close-Out Rejection" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskUser Implementation="WebService"/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Task" ToolId="Trisotech_Visio" Width="105.0">
+                            <Coordinates XCoordinate="1663.0" YCoordinate="171.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_63474DBF-E8E4-4C29-AD38-E46DE50EE080" Name="Approved?">
+                    <Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="42.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Gateway" ToolId="Trisotech_Visio" Width="42.0">
+                            <Coordinates XCoordinate="1293.0" YCoordinate="309.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_8576B2C5-068B-4A21-A035-A3F55CA7AA70" Name="Request Credit Report">
+                    <Event>
+                        <IntermediateEvent Trigger="Message">
+                            <TriggerResultMessage CatchThrow="THROW">
+                                <Message Id="1364754651513"/>
+                            </TriggerResultMessage>
+                        </IntermediateEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Intermediate Event" ToolId="Trisotech_Visio" Width="32.0">
+                            <Coordinates XCoordinate="818.0" YCoordinate="314.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0" Name="Receive  Loan  Application">
+                    <Event>
+                        <StartEvent Trigger="Message">
+                            <TriggerResultMessage>
+                                <Message Id="1364754651515"/>
+                            </TriggerResultMessage>
+                        </StartEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="30.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Start Event" ToolId="Trisotech_Visio" Width="30.0">
+                            <Coordinates XCoordinate="470.0" YCoordinate="315.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A" IsForCompensation="false" Name="Verify Employment" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskUser Implementation="WebService"/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Task" ToolId="Trisotech_Visio" Width="105.0">
+                            <Coordinates XCoordinate="830.0" YCoordinate="171.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_BAE2D4BB-902F-4C3C-AF76-A0CABBA9A7AE" Name="Receive  Credit  Report">
+                    <Event>
+                        <IntermediateEvent Trigger="Message">
+                            <TriggerResultMessage CatchThrow="CATCH">
+                                <Message Id="1364754651519"/>
+                            </TriggerResultMessage>
+                        </IntermediateEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Intermediate Event" ToolId="Trisotech_Visio" Width="32.0">
+                            <Coordinates XCoordinate="940.0" YCoordinate="314.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_A2A06973-DC30-4BCF-BF0F-1FD60D68E1EB" Name="Loan Request Rejected">
+                    <Event>
+                        <EndEvent Result="None"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="End Event" ToolId="Trisotech_Visio" Width="32.0">
+                            <Coordinates XCoordinate="1818.0" YCoordinate="189.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_DA142784-0125-46E0-A3CA-004302BD5E21" IsForCompensation="false" Name="Send Approval Letter" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskSend Implementation="WebService">
+                                <Message Id="1364754651522"/>
+                            </TaskSend>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Task" ToolId="Trisotech_Visio" Width="105.0">
+                            <Coordinates XCoordinate="1405.0" YCoordinate="388.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_2017EC19-4BD5-40D7-9014-E7D337A68E01" IsForCompensation="false" Name="Record Loan Application" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskUser Implementation="WebService"/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Task" ToolId="Trisotech_Visio" Width="105.0">
+                            <Coordinates XCoordinate="549.0" YCoordinate="296.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_D6383F72-7F7A-48F8-A742-A26F36A8DC10" IsForCompensation="false" Name="Send Rejection Letter" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskSend Implementation="WebService">
+                                <Message Id="1364754651527"/>
+                            </TaskSend>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Task" ToolId="Trisotech_Visio" Width="105.0">
+                            <Coordinates XCoordinate="1404.0" YCoordinate="171.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_ACDC390F-49FD-43A3-ACD6-1EBB8074801D" IsForCompensation="false" Name="Review Title Report" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskUser Implementation="WebService"/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" LaneId="_B634801B-C2C5-4C55-A4AD-17882B1E87F2" PageId="6" Shape="Task" ToolId="Trisotech_Visio" Width="105.0">
+                            <Coordinates XCoordinate="930.0" YCoordinate="639.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316" IsForCompensation="false" Name="Perform Title Search" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" LaneId="_B634801B-C2C5-4C55-A4AD-17882B1E87F2" PageId="6" Shape="Task" ToolId="Trisotech_Visio" Width="105.0">
+                            <Coordinates XCoordinate="780.0" YCoordinate="639.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_32AE6A44-B449-40FE-9055-69819469BF98" Name="">
+                    <Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="42.0" LaneId="_357D85DD-EB4D-4D21-AAD7-D9895DA1633B" PageId="6" Shape="Gateway" ToolId="Trisotech_Visio" Width="42.0">
+                            <Coordinates XCoordinate="1595.0" YCoordinate="839.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_57EE71B2-5287-46A2-9B24-83A68131714C" IsForCompensation="false" Name="Underwrite Loan with Terms" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskUser Implementation="WebService"/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" LaneId="_357D85DD-EB4D-4D21-AAD7-D9895DA1633B" PageId="6" Shape="Task" ToolId="Trisotech_Visio" Width="105.0">
+                            <Coordinates XCoordinate="1405.0" YCoordinate="825.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_542AE8E6-9CEA-43E3-8177-C685A9F430FE" Name="1 Hour Time Limit">
+                    <Event>
+                        <IntermediateEvent Target="_57EE71B2-5287-46A2-9B24-83A68131714C" Trigger="Timer">
+                            <TriggerTimer>
+                                <TimeDate/>
+                            </TriggerTimer>
+                        </IntermediateEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" PageId="6" Shape="Intermediate Event" ToolId="Trisotech_Visio" Width="32.0">
+                            <Coordinates XCoordinate="1416.0" YCoordinate="877.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_3330ACC4-BCD9-422A-ADCD-7DDF06A2042D" IsForCompensation="false" Name="Set with Default Terms" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskScript>
+                                <Script/>
+                            </TaskScript>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" LaneId="_357D85DD-EB4D-4D21-AAD7-D9895DA1633B" PageId="6" Shape="Task" ToolId="Trisotech_Visio" Width="105.0">
+                            <Coordinates XCoordinate="1563.0" YCoordinate="931.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <DataObjects>
+                <DataObject Id="_676BDDAC-A319-426B-96DF-E1F1EEF38EFB" Name="Loan Application" State="Rejected">
+                    <DataFieldRef Id="DF1364754651589"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="38.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Data Object" ToolId="Trisotech_Visio" Width="30.0">
+                            <Coordinates XCoordinate="1738.0" YCoordinate="262.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataObject>
+                <DataObject Id="_F36BDDC0-AD29-47B6-8102-9BF334EFB012" Name="Loan Application" State="Initial">
+                    <DataFieldRef Id="DF1364754651589"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="38.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Data Object" ToolId="Trisotech_Visio" Width="30.0">
+                            <Coordinates XCoordinate="534.0" YCoordinate="187.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataObject>
+                <DataObject Id="_A383CA8A-59EA-4E2E-8A40-38363ACF6547" Name="Loan Application" State="Approved">
+                    <DataFieldRef Id="DF1364754651589"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="38.0" LaneId="_81354509-EC39-44E5-A266-4286CBB1EFAC" PageId="6" Shape="Data Object" ToolId="Trisotech_Visio" Width="30.0">
+                            <Coordinates XCoordinate="1738.0" YCoordinate="489.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataObject>
+            </DataObjects>
+            <Transitions>
+                <Transition From="_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0" Id="_72A5DDBE-554D-4014-BE8C-FB2E7642F4C3" Name="" To="_2017EC19-4BD5-40D7-9014-E7D337A68E01">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="500.0" YCoordinate="330.0"/>
+                            <Coordinates XCoordinate="514.0" YCoordinate="330.0"/>
+                            <Coordinates XCoordinate="549.0" YCoordinate="330.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_2017EC19-4BD5-40D7-9014-E7D337A68E01" Id="_0E7BF85E-0000-43F9-B735-3BF726227B81" Name="" To="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="654.0" YCoordinate="330.0"/>
+                            <Coordinates XCoordinate="668.0" YCoordinate="330.0"/>
+                            <Coordinates XCoordinate="705.0" YCoordinate="330.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4" Id="_4300C232-1B1B-4D7D-9056-A153E31A2A5E" Name="" To="_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="730.0" YCoordinate="313.0"/>
+                            <Coordinates XCoordinate="730.0" YCoordinate="205.0"/>
+                            <Coordinates XCoordinate="830.0" YCoordinate="205.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4" Id="_F39FB372-FB0E-475E-8174-D9F6C1EFABA9" Name="" To="_8576B2C5-068B-4A21-A035-A3F55CA7AA70">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="747.0" YCoordinate="330.0"/>
+                            <Coordinates XCoordinate="818.0" YCoordinate="330.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_8576B2C5-068B-4A21-A035-A3F55CA7AA70" Id="_2DC8CE0B-492C-4326-A36C-FA37E695F6B8" Name="" To="_BAE2D4BB-902F-4C3C-AF76-A0CABBA9A7AE">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="850.0" YCoordinate="330.0"/>
+                            <Coordinates XCoordinate="940.0" YCoordinate="330.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_BAE2D4BB-902F-4C3C-AF76-A0CABBA9A7AE" Id="_D8676C4E-977F-4441-B9AA-9E0F82898D34" Name="" To="_C77E51FD-9C1B-40F7-9273-100E47069B11">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="973.0" YCoordinate="330.0"/>
+                            <Coordinates XCoordinate="1044.0" YCoordinate="330.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A" Id="_8663B922-4BE9-4192-8BC8-0578B127A8F1" Name="" To="_C77E51FD-9C1B-40F7-9273-100E47069B11">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="935.0" YCoordinate="205.0"/>
+                            <Coordinates XCoordinate="1065.0" YCoordinate="205.0"/>
+                            <Coordinates XCoordinate="1065.0" YCoordinate="309.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4" Id="_880E2204-2897-40BA-9C2F-B81F9580EF75" Name="" To="_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="726.0" YCoordinate="351.0"/>
+                            <Coordinates XCoordinate="726.0" YCoordinate="674.0"/>
+                            <Coordinates XCoordinate="780.0" YCoordinate="673.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316" Id="_60D986A6-6530-4D75-9648-AF5AFB1CA9A6" Name="" To="_ACDC390F-49FD-43A3-ACD6-1EBB8074801D">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="885.0" YCoordinate="673.0"/>
+                            <Coordinates XCoordinate="930.0" YCoordinate="673.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_ACDC390F-49FD-43A3-ACD6-1EBB8074801D" Id="_78F951B5-7470-4538-AA6C-CD08E4D422C6" Name="" To="_C77E51FD-9C1B-40F7-9273-100E47069B11">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1035.0" YCoordinate="673.0"/>
+                            <Coordinates XCoordinate="1065.0" YCoordinate="673.0"/>
+                            <Coordinates XCoordinate="1065.0" YCoordinate="351.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_C77E51FD-9C1B-40F7-9273-100E47069B11" Id="_B9562572-75E4-4143-BC81-4D79CEDB65D6" Name="" To="_C94EFA57-E605-4564-BFC4-22A84C660A6A">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1086.0" YCoordinate="330.0"/>
+                            <Coordinates XCoordinate="1100.0" YCoordinate="330.0"/>
+                            <Coordinates XCoordinate="1137.0" YCoordinate="330.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_C94EFA57-E605-4564-BFC4-22A84C660A6A" Id="_A80D6FF4-D222-4AAF-9161-8FB83F91AEED" Name="" To="_63474DBF-E8E4-4C29-AD38-E46DE50EE080">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1242.0" YCoordinate="330.0"/>
+                            <Coordinates XCoordinate="1256.0" YCoordinate="330.0"/>
+                            <Coordinates XCoordinate="1293.0" YCoordinate="330.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_63474DBF-E8E4-4C29-AD38-E46DE50EE080" Id="_93351D59-990B-46B0-80AB-FEEF088E9D7B" Name="No" To="_D6383F72-7F7A-48F8-A742-A26F36A8DC10">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1314.0" YCoordinate="309.0"/>
+                            <Coordinates XCoordinate="1314.0" YCoordinate="205.0"/>
+                            <Coordinates XCoordinate="1404.0" YCoordinate="205.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_D6383F72-7F7A-48F8-A742-A26F36A8DC10" Id="_07B03EA5-891A-4BF5-8779-1A6912D3B183" Name="" To="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1509.0" YCoordinate="205.0"/>
+                            <Coordinates XCoordinate="1663.0" YCoordinate="205.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6" Id="_0AEB1821-0E16-4CC8-BC7C-9AF71C35F88F" Name="" To="_A2A06973-DC30-4BCF-BF0F-1FD60D68E1EB">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1768.0" YCoordinate="205.0"/>
+                            <Coordinates XCoordinate="1782.0" YCoordinate="205.0"/>
+                            <Coordinates XCoordinate="1818.0" YCoordinate="205.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_63474DBF-E8E4-4C29-AD38-E46DE50EE080" Id="_3D6F2455-BFFB-44BB-A052-892FB15FEEB4" Name="Yes" To="_DA142784-0125-46E0-A3CA-004302BD5E21">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1314.0" YCoordinate="351.0"/>
+                            <Coordinates XCoordinate="1314.0" YCoordinate="422.0"/>
+                            <Coordinates XCoordinate="1405.0" YCoordinate="422.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_DA142784-0125-46E0-A3CA-004302BD5E21" Id="_906AE477-1AA9-443C-AFFD-C0F2AAE20D83" Name="" To="_57EE71B2-5287-46A2-9B24-83A68131714C">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1457.0" YCoordinate="456.0"/>
+                            <Coordinates XCoordinate="1457.0" YCoordinate="825.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_57EE71B2-5287-46A2-9B24-83A68131714C" Id="_F8D6251D-FEDF-40FE-9541-89714A5F81D8" Name="" To="_32AE6A44-B449-40FE-9055-69819469BF98">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1510.0" YCoordinate="859.0"/>
+                            <Coordinates XCoordinate="1524.0" YCoordinate="859.0"/>
+                            <Coordinates XCoordinate="1595.0" YCoordinate="859.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_542AE8E6-9CEA-43E3-8177-C685A9F430FE" Id="_F36A03D5-2835-4BEB-9835-612961CB01B0" Name="" To="_3330ACC4-BCD9-422A-ADCD-7DDF06A2042D">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1432.0" YCoordinate="909.0"/>
+                            <Coordinates XCoordinate="1432.0" YCoordinate="945.0"/>
+                            <Coordinates XCoordinate="1563.0" YCoordinate="945.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_3330ACC4-BCD9-422A-ADCD-7DDF06A2042D" Id="_81B53174-A333-4892-8A4E-0654D0DC9059" Name="" To="_32AE6A44-B449-40FE-9055-69819469BF98">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1616.0" YCoordinate="931.0"/>
+                            <Coordinates XCoordinate="1616.0" YCoordinate="917.0"/>
+                            <Coordinates XCoordinate="1616.0" YCoordinate="880.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_32AE6A44-B449-40FE-9055-69819469BF98" Id="_BCC30BA7-C001-4D9D-B69C-2D99DA0706C5" Name="" To="_F366069F-C180-4D69-B2BF-4124649EC36F">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1616.0" YCoordinate="839.0"/>
+                            <Coordinates XCoordinate="1616.0" YCoordinate="427.0"/>
+                            <Coordinates XCoordinate="1664.0" YCoordinate="427.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_F366069F-C180-4D69-B2BF-4124649EC36F" Id="_DEAA6495-03EC-479A-BAED-836083B9B19F" Name="" To="_6E1A332C-9187-4C4A-BD0F-27167F940786">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1769.0" YCoordinate="427.0"/>
+                            <Coordinates XCoordinate="1783.0" YCoordinate="427.0"/>
+                            <Coordinates XCoordinate="1818.0" YCoordinate="427.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+            <DataAssociations>
+                <DataAssociation From="_F36BDDC0-AD29-47B6-8102-9BF334EFB012" Id="_8BF5972D-13A9-4941-A60A-F338F0347B05" Name="" To="_2017EC19-4BD5-40D7-9014-E7D337A68E01">
+                    <Object Id="1364754651576"/>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="564.0" YCoordinate="205.0"/>
+                            <Coordinates XCoordinate="601.0" YCoordinate="205.0"/>
+                            <Coordinates XCoordinate="602.0" YCoordinate="296.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation From="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6" Id="_346DBF5F-09DC-4A36-95E4-5019CA5D6457" Name="" To="_676BDDAC-A319-426B-96DF-E1F1EEF38EFB">
+                    <Object Id="1364754651578"/>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1698.0" YCoordinate="239.0"/>
+                            <Coordinates XCoordinate="1698.0" YCoordinate="280.0"/>
+                            <Coordinates XCoordinate="1738.0" YCoordinate="281.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation From="_F366069F-C180-4D69-B2BF-4124649EC36F" Id="_95613936-EA5E-432B-8F84-5D29E58EA82F" Name="" To="_A383CA8A-59EA-4E2E-8A40-38363ACF6547">
+                    <Object Id="1364754651580"/>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="1716.0" YCoordinate="461.0"/>
+                            <Coordinates XCoordinate="1716.0" YCoordinate="508.0"/>
+                            <Coordinates XCoordinate="1738.0" YCoordinate="507.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation From="_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0" Id="_5D0B2CCB-8CD7-4D85-B56B-2095BDBF6240" Name="" To="_F36BDDC0-AD29-47B6-8102-9BF334EFB012">
+                    <Object Id="1364754651582"/>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech_Visio">
+                            <Coordinates XCoordinate="485.0" YCoordinate="315.0"/>
+                            <Coordinates XCoordinate="485.0" YCoordinate="206.0"/>
+                            <Coordinates XCoordinate="534.0" YCoordinate="205.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+            </DataAssociations>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+    <bpsim:BPSimData xmlns:bpsim="http://www.bpsim.org/schemas/1.0">
+        <bpsim:Scenario author="Tim Stephenson" id="default" name="Scenario 1">
+            <bpsim:ScenarioParameters baseTimeUnit="min" replication="3">
+                <bpsim:Duration>
+                    <bpsim:DurationParameter value="PT40H"/>
+                </bpsim:Duration>
+            </bpsim:ScenarioParameters>
+            <bpsim:ElementParameters elementRef="6">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>min</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>max</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0">
+                <bpsim:ControlParameters>
+                    <bpsim:InterTriggerTimer>
+                        <bpsim:TriangularDistribution max="30" min="10" mode="16"/>
+                    </bpsim:InterTriggerTimer>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_BAE2D4BB-902F-4C3C-AF76-A0CABBA9A7AE">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TriangularDistribution max="6" min="4" mode="5"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:InterTriggerTimer>
+                        <bpsim:TriangularDistribution max="6" min="4" mode="5"/>
+                    </bpsim:InterTriggerTimer>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_2017EC19-4BD5-40D7-9014-E7D337A68E01">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>min</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>max</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="20" min="0" standardDeviation="1"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>min</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>max</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="30" min="0" standardDeviation="4"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>min</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>max</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="60" min="0" standardDeviation="2"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_ACDC390F-49FD-43A3-ACD6-1EBB8074801D">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>min</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>max</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="20" min="0" standardDeviation="2"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_C94EFA57-E605-4564-BFC4-22A84C660A6A">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>min</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>max</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="30" min="0" standardDeviation="4"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>min</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>max</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="5" min="0" standardDeviation="0.25"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_F366069F-C180-4D69-B2BF-4124649EC36F">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>min</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>max</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="10" min="0" standardDeviation="0.25"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_57EE71B2-5287-46A2-9B24-83A68131714C">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>min</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>max</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="50" min="0" standardDeviation="10"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_D6383F72-7F7A-48F8-A742-A26F36A8DC10">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:DurationParameter value="PT1M"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_DA142784-0125-46E0-A3CA-004302BD5E21">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:DurationParameter value="PT1M"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_3330ACC4-BCD9-422A-ADCD-7DDF06A2042D">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:DurationParameter value="PT1M"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_3D6F2455-BFFB-44BB-A052-892FB15FEEB4">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="0.27"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_93351D59-990B-46B0-80AB-FEEF088E9D7B">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="0.73"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6E1A332C-9187-4C4A-BD0F-27167F940786">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_A2A06973-DC30-4BCF-BF0F-1FD60D68E1EB">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_542AE8E6-9CEA-43E3-8177-C685A9F430FE">
+                <bpsim:ControlParameters>
+                    <bpsim:InterTriggerTimer>
+                        <bpsim:DurationParameter value="PT60M"/>
+                    </bpsim:InterTriggerTimer>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+        </bpsim:Scenario>
+    </bpsim:BPSimData>
+</Package>
