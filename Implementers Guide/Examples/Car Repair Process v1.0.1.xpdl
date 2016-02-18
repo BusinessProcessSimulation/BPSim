@@ -734,14 +734,14 @@
             <bpsim:ElementParameters elementRef="_9C46FDB0-2EBD-4B2F-A72A-0189A4D76A73">
                 <bpsim:ControlParameters>
                     <bpsim:Condition>
-                        <bpsim:ExpressionParameter value="getProperty('noOfIssues') != 0"/>
+                        <bpsim:ExpressionParameter value="getProperty('noOfIssues') &gt; 0"/>
                     </bpsim:Condition>
                 </bpsim:ControlParameters>
             </bpsim:ElementParameters>
             <bpsim:ElementParameters elementRef="_4799D2B0-A204-4A08-94ED-796C25D9AE57">
                 <bpsim:ControlParameters>
                     <bpsim:Condition>
-                        <bpsim:ExpressionParameter value="getProperty('noOfIssues') = 0"/>
+                        <bpsim:ExpressionParameter value="getProperty('noOfIssues') &lt;= 0"/>
                     </bpsim:Condition>
                 </bpsim:ControlParameters>
             </bpsim:ElementParameters>
