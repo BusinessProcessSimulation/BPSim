@@ -122,7 +122,7 @@
 					<xs:complexContent>
 						<xs:extension base="bpsim:Parameter">
 							<xs:attribute name="name" type="xs:string" use="required"/>
-							<xs:attribute name="type" type="bpsim:PropertyParameter"/>
+							<xs:attribute name="type" type="bpsim:PropertyType"/>
 						</xs:extension>
 					</xs:complexContent>
 				</xs:complexType>
