@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<bpsim:BPSimData xmlns:bpsim="http://www.bpsim.org/schemas/2.0">
+  <bpsim:Scenario xmlns:lsim="urn:lanner.simulation.lsim.model.data" result="S1" vendor="Lanner Group L-SIM " name="S1_results" id="S1_results">
+    <bpsim:ElementParameters elementRef="_FA77D7D8-9C02-4006-942A-B003AEDA5E3C">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:28:59" value="107"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:28:59" value="96"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:28:59" value="100"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_4CFC937C-2E42-4671-859E-42E710931963">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:28:59" value="107"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:28:59" value="96"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:28:59" value="100"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_51BDA265-2FF5-40CB-B68D-1FBF9DAAA74C">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:28:59" value="151"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:28:59" value="151"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:28:59" value="151"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_B67579E4-E038-4D9D-AA46-A3F9628CADA1">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:28:59" value="107"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:28:59" value="96"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:28:59" value="100"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_071B5D0A-5225-4E55-9105-8D15169DAC96">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:28:59" value="358"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:28:59" value="264"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:28:59" value="296"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_87E52808-857B-45B0-93E8-F6D7AC0B4B3E">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:28:59" value="44"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:28:59" value="55"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:28:59" value="51"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_6">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:28:59" value="151"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:28:59" value="151"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:28:59" value="151"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+  </bpsim:Scenario>
+  <bpsim:Scenario xmlns:bpsim="http://www.bpsim.org/schemas/2.0" xmlns:lsim="urn:lanner.simulation.lsim.model.data" result="S2" vendor="Lanner Group L-SIM " name="S2_results" id="S2_results">
+    <bpsim:ElementParameters elementRef="_FA77D7D8-9C02-4006-942A-B003AEDA5E3C">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:29:00" value="107"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:29:00" value="96"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:29:00" value="100"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_4CFC937C-2E42-4671-859E-42E710931963">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:29:00" value="107"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:29:00" value="96"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:29:00" value="100"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_F9A272EE-D325-44CF-AFFC-4A615D2C9971">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:29:00" value="6"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:29:00" value="6"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:29:00" value="6"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_51BDA265-2FF5-40CB-B68D-1FBF9DAAA74C">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:29:00" value="151"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:29:00" value="151"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:29:00" value="151"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_B67579E4-E038-4D9D-AA46-A3F9628CADA1">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:29:00" value="101"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:29:00" value="90"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:29:00" value="94"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_2BBAB508-4026-40F7-8FC3-23E68E77EE46">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:29:00" value="6"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:29:00" value="6"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:29:00" value="6"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_071B5D0A-5225-4E55-9105-8D15169DAC96">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:29:00" value="340"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:29:00" value="248"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:29:00" value="274"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_87E52808-857B-45B0-93E8-F6D7AC0B4B3E">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:29:00" value="44"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:29:00" value="55"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:29:00" value="51"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_6">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-10-20T02:29:00" value="151"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-10-20T02:29:00" value="151"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-10-20T02:29:00" value="151"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+  </bpsim:Scenario>
+</bpsim:BPSimData>

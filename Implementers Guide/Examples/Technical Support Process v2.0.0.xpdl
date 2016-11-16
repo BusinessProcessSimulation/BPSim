@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="UTF-8"?><xpdl22:Package xmlns:xpdl22="http://www.wfmc.org/2009/XPDL2.2" xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:bpsim="http://www.bpsim.org/schemas/2.0" xmlns:ns1="http://www.bpsim.org/schemas/1.0" xmlns:rss="http://purl.org/rss/2.0/" xmlns:temporal="http://www.trisotech.com/2008/TRISOTEMPORAL1.0" xmlns:triso="http://www.trisotech.com/2006/TRISO1.0" xmlns:trisofeed="http://trisotech.com/feed" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="_1399929387037" Name="Technical Support Process v2.0.0">
+    <xpdl22:PackageHeader>
+        <xpdl22:XPDLVersion>
+			2.2
+		</xpdl22:XPDLVersion>
+        <xpdl22:Vendor>Trisotech</xpdl22:Vendor>
+        <xpdl22:Created>Nov 16, 2016 12:01:19 PM</xpdl22:Created>
+    </xpdl22:PackageHeader>
+    <xpdl22:Participants>
+        <xpdl22:Participant Id="resource_Supplier" Name="Supplier">
+            <xpdl22:ParticipantType Type="RESOURCE"/>
+        </xpdl22:Participant>
+        <xpdl22:Participant Id="resource_2nd_Level_Techical_Support_Agent" Name="2nd Level Techical Support Agent">
+            <xpdl22:ParticipantType Type="RESOURCE"/>
+        </xpdl22:Participant>
+        <xpdl22:Participant Id="resource_1st_Level_Techical_Support_Agent" Name="1st Level Techical Support Agent">
+            <xpdl22:ParticipantType Type="RESOURCE"/>
+        </xpdl22:Participant>
+        <xpdl22:Participant Id="resource_Front_Office" Name="Front Office">
+            <xpdl22:ParticipantType Type="RESOURCE"/>
+        </xpdl22:Participant>
+        <xpdl22:Participant Id="P1479315679556" Name="Supplier">
+            <xpdl22:ParticipantType Type="ORGANIZATIONAL_UNIT"/>
+        </xpdl22:Participant>
+        <xpdl22:Participant Id="P1479315679557" Name="2nd Level Techical Support Agent">
+            <xpdl22:ParticipantType Type="ORGANIZATIONAL_UNIT"/>
+        </xpdl22:Participant>
+        <xpdl22:Participant Id="P1479315679558" Name="1st Level Techical Support Agent">
+            <xpdl22:ParticipantType Type="ORGANIZATIONAL_UNIT"/>
+        </xpdl22:Participant>
+        <xpdl22:Participant Id="P1479315679559" Name="Front Office">
+            <xpdl22:ParticipantType Type="ORGANIZATIONAL_UNIT"/>
+        </xpdl22:Participant>
+        <xpdl22:Participant Id="P1479315679560" Name="Customer">
+            <xpdl22:ParticipantType Type="ORGANIZATIONAL_UNIT"/>
+        </xpdl22:Participant>
+    </xpdl22:Participants>
+    <xpdl22:Pages>
+        <xpdl22:Page Height="1528.0" Id="_40005" Name="Scenario 1" Width="1485.0"/>
+    </xpdl22:Pages>
+    <xpdl22:GlobalActivities/>
+    <xpdl22:DataStores/>
+    <xpdl22:Pools>
+        <xpdl22:Pool BoundaryVisible="true" Id="_10-34" Name="Supplier" Orientation="HORIZONTAL" Participant="P1479315679556" Process="WFP-40005-3">
+            <xpdl22:NodeGraphicsInfos>
+                <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="168.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="936.0">
+                    <xpdl22:Coordinates XCoordinate="288.0" YCoordinate="1260.0"/>
+                    
+                </xpdl22:NodeGraphicsInfo>
+            </xpdl22:NodeGraphicsInfos>
+        </xpdl22:Pool>
+        <xpdl22:Pool BoundaryVisible="true" Id="_10-26" Name="2nd Level Techical Support Agent" Orientation="HORIZONTAL" Participant="P1479315679557" Process="WFP-40005-5">
+            <xpdl22:NodeGraphicsInfos>
+                <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="246.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="936.0">
+                    <xpdl22:Coordinates XCoordinate="288.0" YCoordinate="966.0"/>
+                    
+                </xpdl22:NodeGraphicsInfo>
+            </xpdl22:NodeGraphicsInfos>
+        </xpdl22:Pool>
+        <xpdl22:Pool BoundaryVisible="true" Id="_10-18" Name="1st Level Techical Support Agent" Orientation="HORIZONTAL" Participant="P1479315679558" Process="WFP-40005-2">
+            <xpdl22:NodeGraphicsInfos>
+                <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="240.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="936.0">
+                    <xpdl22:Coordinates XCoordinate="288.0" YCoordinate="672.0"/>
+                    
+                </xpdl22:NodeGraphicsInfo>
+            </xpdl22:NodeGraphicsInfos>
+        </xpdl22:Pool>
+        <xpdl22:Pool BoundaryVisible="true" Id="_10-10" Name="Front Office" Orientation="HORIZONTAL" Participant="P1479315679559" Process="WFP-40005-1">
+            <xpdl22:NodeGraphicsInfos>
+                <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="354.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="936.0">
+                    <xpdl22:Coordinates XCoordinate="288.0" YCoordinate="258.0"/>
+                    
+                </xpdl22:NodeGraphicsInfo>
+            </xpdl22:NodeGraphicsInfos>
+        </xpdl22:Pool>
+        <xpdl22:Pool BoundaryVisible="true" Id="_10-1" Name="Customer" Orientation="HORIZONTAL" Participant="P1479315679560">
+            <xpdl22:NodeGraphicsInfos>
+                <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="72.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="936.0">
+                    <xpdl22:Coordinates XCoordinate="288.0" YCoordinate="144.0"/>
+                    
+                </xpdl22:NodeGraphicsInfo>
+            </xpdl22:NodeGraphicsInfos>
+        </xpdl22:Pool>
+    </xpdl22:Pools>
+    <xpdl22:MessageFlows>
+        <xpdl22:MessageFlow Id="_10-452" Source="_10-380" Target="_10-433">
+            <xpdl22:Message Id="Message_1399929387655"/>
+            <xpdl22:ConnectorGraphicsInfos>
+                <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                    <xpdl22:Coordinates XCoordinate="894.0" YCoordinate="710.0"/>
+                    <xpdl22:Coordinates XCoordinate="894.0" YCoordinate="526.0"/>
+                    
+                </xpdl22:ConnectorGraphicsInfo>
+            </xpdl22:ConnectorGraphicsInfos>
+        </xpdl22:MessageFlow>
+        <xpdl22:MessageFlow Id="_10-191" Source="_10-138" Target="_10-1">
+            <xpdl22:Message Id="Message_1399929387652"/>
+            <xpdl22:ConnectorGraphicsInfos>
+                <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                    <xpdl22:Coordinates XCoordinate="880.0" YCoordinate="306.0"/>
+                    <xpdl22:Coordinates XCoordinate="880.0" YCoordinate="288.0"/>
+                    <xpdl22:Coordinates XCoordinate="882.0" YCoordinate="288.0"/>
+                    <xpdl22:Coordinates XCoordinate="882.0" YCoordinate="216.0"/>
+                    
+                </xpdl22:ConnectorGraphicsInfo>
+            </xpdl22:ConnectorGraphicsInfos>
+        </xpdl22:MessageFlow>
+        <xpdl22:MessageFlow Id="_10-301" Source="_10-235" Target="_10-288">
+            <xpdl22:Message Id="Message_1399929387654"/>
+            <xpdl22:ConnectorGraphicsInfos>
+                <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                    <xpdl22:Coordinates XCoordinate="800.0" YCoordinate="544.0"/>
+                    <xpdl22:Coordinates XCoordinate="800.0" YCoordinate="574.0"/>
+                    <xpdl22:Coordinates XCoordinate="360.0" YCoordinate="574.0"/>
+                    <xpdl22:Coordinates XCoordinate="360.0" YCoordinate="729.0"/>
+                    
+                </xpdl22:ConnectorGraphicsInfo>
+            </xpdl22:ConnectorGraphicsInfos>
+        </xpdl22:MessageFlow>
+        <xpdl22:MessageFlow Id="_10-193" Source="_10-1" Target="_10-138">
+            <xpdl22:Message Id="Message_1399929387653"/>
+            <xpdl22:ConnectorGraphicsInfos>
+                <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                    <xpdl22:Coordinates XCoordinate="910.0" YCoordinate="216.0"/>
+                    <xpdl22:Coordinates XCoordinate="910.0" YCoordinate="234.0"/>
+                    <xpdl22:Coordinates XCoordinate="908.0" YCoordinate="234.0"/>
+                    <xpdl22:Coordinates XCoordinate="908.0" YCoordinate="306.0"/>
+                    
+                </xpdl22:ConnectorGraphicsInfo>
+            </xpdl22:ConnectorGraphicsInfos>
+        </xpdl22:MessageFlow>
+        <xpdl22:MessageFlow Id="_10-973" Source="_10-920" Target="_10-1">
+            <xpdl22:Message Id="Message_1399929387660"/>
+            <xpdl22:ConnectorGraphicsInfos>
+                <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                    <xpdl22:Coordinates XCoordinate="681.0" YCoordinate="476.0"/>
+                    <xpdl22:Coordinates XCoordinate="681.0" YCoordinate="216.0"/>
+                    
+                </xpdl22:ConnectorGraphicsInfo>
+            </xpdl22:ConnectorGraphicsInfos>
+        </xpdl22:MessageFlow>
+        <xpdl22:MessageFlow Id="_10-524" Source="_10-458" Target="_10-511">
+            <xpdl22:Message Id="Message_1399929387656"/>
+            <xpdl22:ConnectorGraphicsInfos>
+                <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                    <xpdl22:Coordinates XCoordinate="681.0" YCoordinate="874.0"/>
+                    <xpdl22:Coordinates XCoordinate="681.0" YCoordinate="892.0"/>
+                    <xpdl22:Coordinates XCoordinate="360.0" YCoordinate="892.0"/>
+                    <xpdl22:Coordinates XCoordinate="360.0" YCoordinate="1031.0"/>
+                    
+                </xpdl22:ConnectorGraphicsInfo>
+            </xpdl22:ConnectorGraphicsInfos>
+        </xpdl22:MessageFlow>
+        <xpdl22:MessageFlow Id="_10-55" Source="_10-1" Target="_10-42">
+            <xpdl22:Message Id="Message_1399929387649"/>
+            <xpdl22:ConnectorGraphicsInfos>
+                <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                    <xpdl22:Coordinates XCoordinate="358.0" YCoordinate="216.0"/>
+                    <xpdl22:Coordinates XCoordinate="358.0" YCoordinate="234.0"/>
+                    <xpdl22:Coordinates XCoordinate="360.0" YCoordinate="234.0"/>
+                    <xpdl22:Coordinates XCoordinate="360.0" YCoordinate="495.0"/>
+                    
+                </xpdl22:ConnectorGraphicsInfo>
+            </xpdl22:ConnectorGraphicsInfos>
+        </xpdl22:MessageFlow>
+        <xpdl22:MessageFlow Id="_10-918" Source="_10-670" Target="_10-781">
+            <xpdl22:Message Id="Message_1399929387659"/>
+            <xpdl22:ConnectorGraphicsInfos>
+                <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                    <xpdl22:Coordinates XCoordinate="681.0" YCoordinate="1176.0"/>
+                    <xpdl22:Coordinates XCoordinate="681.0" YCoordinate="1194.0"/>
+                    <xpdl22:Coordinates XCoordinate="363.0" YCoordinate="1194.0"/>
+                    <xpdl22:Coordinates XCoordinate="363.0" YCoordinate="1329.0"/>
+                    
+                </xpdl22:ConnectorGraphicsInfo>
+            </xpdl22:ConnectorGraphicsInfos>
+        </xpdl22:MessageFlow>
+        <xpdl22:MessageFlow Id="_10-742" Source="_10-617" Target="_10-723">
+            <xpdl22:Message Id="Message_1399929387657"/>
+            <xpdl22:ConnectorGraphicsInfos>
+                <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                    <xpdl22:Coordinates XCoordinate="894.0" YCoordinate="1012.0"/>
+                    <xpdl22:Coordinates XCoordinate="894.0" YCoordinate="856.0"/>
+                    
+                </xpdl22:ConnectorGraphicsInfo>
+            </xpdl22:ConnectorGraphicsInfos>
+        </xpdl22:MessageFlow>
+        <xpdl22:MessageFlow Id="_10-900" Source="_10-847" Target="_10-760">
+            <xpdl22:Message Id="Message_1399929387658"/>
+            <xpdl22:ConnectorGraphicsInfos>
+                <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                    <xpdl22:Coordinates XCoordinate="894.0" YCoordinate="1310.0"/>
+                    <xpdl22:Coordinates XCoordinate="894.0" YCoordinate="1158.0"/>
+                    
+                </xpdl22:ConnectorGraphicsInfo>
+            </xpdl22:ConnectorGraphicsInfos>
+        </xpdl22:MessageFlow>
+        <xpdl22:MessageFlow Id="_10-112" Source="_10-1" Target="_10-57">
+            <xpdl22:Message Id="Message_1399929387651"/>
+            <xpdl22:ConnectorGraphicsInfos>
+                <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                    <xpdl22:Coordinates XCoordinate="466.0" YCoordinate="216.0"/>
+                    <xpdl22:Coordinates XCoordinate="466.0" YCoordinate="476.0"/>
+                    
+                </xpdl22:ConnectorGraphicsInfo>
+            </xpdl22:ConnectorGraphicsInfos>
+        </xpdl22:MessageFlow>
+        <xpdl22:MessageFlow Id="_10-110" Source="_10-57" Target="_10-1">
+            <xpdl22:Message Id="Message_1399929387650"/>
+            <xpdl22:ConnectorGraphicsInfos>
+                <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                    <xpdl22:Coordinates XCoordinate="439.0" YCoordinate="476.0"/>
+                    <xpdl22:Coordinates XCoordinate="439.0" YCoordinate="458.0"/>
+                    <xpdl22:Coordinates XCoordinate="437.0" YCoordinate="458.0"/>
+                    <xpdl22:Coordinates XCoordinate="437.0" YCoordinate="216.0"/>
+                    
+                </xpdl22:ConnectorGraphicsInfo>
+            </xpdl22:ConnectorGraphicsInfos>
+        </xpdl22:MessageFlow>
+    </xpdl22:MessageFlows>
+    <xpdl22:WorkflowProcesses>
+        <xpdl22:WorkflowProcess Id="WFP-40005-1" Name="Scenario 1 - Front Office - Process">
+            <xpdl22:ProcessHeader>
+                <xpdl22:Description/>
+            </xpdl22:ProcessHeader>
+            <xpdl22:Activities>
+                <xpdl22:Activity CompletionQuantity="1" Id="_10-235" IsForCompensation="false" Name="Request 1st level support" StartQuantity="1">
+                    <xpdl22:Implementation>
+                        <xpdl22:Task>
+                            <xpdl22:TaskManual/>
+                        </xpdl22:Task>
+                    </xpdl22:Implementation>
+                    <xpdl22:Performers>
+                        <xpdl22:Performer>resource_Front_Office</xpdl22:Performer>
+                    </xpdl22:Performers>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="68.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="83.0">
+                            <xpdl22:Coordinates XCoordinate="759.0" YCoordinate="476.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-42" Name="Customer issue report">
+                    <xpdl22:Event>
+                        <xpdl22:StartEvent Trigger="Message">
+                            <xpdl22:TriggerResultMessage CatchThrow="CATCH">
+                                <xpdl22:Message Id="Message_1399929387649"/>
+                            </xpdl22:TriggerResultMessage>
+                        </xpdl22:StartEvent>
+                    </xpdl22:Event>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="30.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="30.0">
+                            <xpdl22:Coordinates XCoordinate="345.0" YCoordinate="495.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity CompletionQuantity="1" Id="_10-138" IsForCompensation="false" Name="Provide solution to customer" StartQuantity="1">
+                    <xpdl22:Implementation>
+                        <xpdl22:Task>
+                            <xpdl22:TaskManual/>
+                        </xpdl22:Task>
+                    </xpdl22:Implementation>
+                    <xpdl22:Performers>
+                        <xpdl22:Performer>resource_Front_Office</xpdl22:Performer>
+                    </xpdl22:Performers>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="68.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="83.0">
+                            <xpdl22:Coordinates XCoordinate="853.0" YCoordinate="306.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity CompletionQuantity="1" Id="_10-920" IsForCompensation="false" Name="Inform customer the issue is going to be escalated" StartQuantity="1">
+                    <xpdl22:Implementation>
+                        <xpdl22:Task>
+                            <xpdl22:TaskManual/>
+                        </xpdl22:Task>
+                    </xpdl22:Implementation>
+                    <xpdl22:Performers>
+                        <xpdl22:Performer>resource_Front_Office</xpdl22:Performer>
+                    </xpdl22:Performers>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="68.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="83.0">
+                            <xpdl22:Coordinates XCoordinate="640.0" YCoordinate="476.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity CompletionQuantity="1" Id="_10-57" IsForCompensation="false" Name="Get issue description from customer" StartQuantity="1">
+                    <xpdl22:Implementation>
+                        <xpdl22:Task>
+                            <xpdl22:TaskManual/>
+                        </xpdl22:Task>
+                    </xpdl22:Implementation>
+                    <xpdl22:Performers>
+                        <xpdl22:Performer>resource_Front_Office</xpdl22:Performer>
+                    </xpdl22:Performers>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="68.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="83.0">
+                            <xpdl22:Coordinates XCoordinate="411.0" YCoordinate="476.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-219" Name="Customer issue resolved">
+                    <xpdl22:Event>
+                        <xpdl22:EndEvent Result="None"/>
+                    </xpdl22:Event>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="32.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="32.0">
+                            <xpdl22:Coordinates XCoordinate="1149.0" YCoordinate="324.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-433" Name="Solution received from 1st level of support">
+                    <xpdl22:Event>
+                        <xpdl22:IntermediateEvent Trigger="Message">
+                            <xpdl22:TriggerResultMessage CatchThrow="CATCH">
+                                <xpdl22:Message Id="Message_1399929387655"/>
+                            </xpdl22:TriggerResultMessage>
+                        </xpdl22:IntermediateEvent>
+                    </xpdl22:Event>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="32.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="32.0">
+                            <xpdl22:Coordinates XCoordinate="878.0" YCoordinate="494.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-114">
+                    <xpdl22:Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="42.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="42.0">
+                            <xpdl22:Coordinates XCoordinate="519.0" YCoordinate="489.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-195">
+                    <xpdl22:Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="42.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="42.0">
+                            <xpdl22:Coordinates XCoordinate="996.0" YCoordinate="319.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+            </xpdl22:Activities>
+            <xpdl22:Transitions>
+                <xpdl22:Transition From="_10-235" Id="_10-450" To="_10-433">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="842.0" YCoordinate="510.0"/>
+                            <xpdl22:Coordinates XCoordinate="878.0" YCoordinate="510.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-920" Id="_10-971" To="_10-235">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="723.0" YCoordinate="510.0"/>
+                            <xpdl22:Coordinates XCoordinate="759.0" YCoordinate="510.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-42" Id="_10-108" To="_10-57">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="375.0" YCoordinate="510.0"/>
+                            <xpdl22:Coordinates XCoordinate="411.0" YCoordinate="510.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-433" Id="_10-454" To="_10-138">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="894.0" YCoordinate="494.0"/>
+                            <xpdl22:Coordinates XCoordinate="894.0" YCoordinate="374.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-114" Id="_10-189" Name="Able to  provide solution" To="_10-138">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="540.0" YCoordinate="489.0"/>
+                            <xpdl22:Coordinates XCoordinate="540.0" YCoordinate="340.0"/>
+                            <xpdl22:Coordinates XCoordinate="677.0" YCoordinate="340.0"/>
+                            <xpdl22:Coordinates XCoordinate="853.0" YCoordinate="340.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-138" Id="_10-217" To="_10-195">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="936.0" YCoordinate="340.0"/>
+                            <xpdl22:Coordinates XCoordinate="996.0" YCoordinate="340.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-114" Id="_10-286" Name="Unable to  provide solution" To="_10-920">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="560.0" YCoordinate="510.0"/>
+                            <xpdl22:Coordinates XCoordinate="640.0" YCoordinate="510.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-195" Id="_10-456" Name="Solution is not effective" To="_10-57">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="1016.0" YCoordinate="361.0"/>
+                            <xpdl22:Coordinates XCoordinate="1016.0" YCoordinate="562.0"/>
+                            <xpdl22:Coordinates XCoordinate="898.0" YCoordinate="562.0"/>
+                            <xpdl22:Coordinates XCoordinate="804.0" YCoordinate="562.0"/>
+                            <xpdl22:Coordinates XCoordinate="452.0" YCoordinate="562.0"/>
+                            <xpdl22:Coordinates XCoordinate="452.0" YCoordinate="544.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-57" Id="_10-136" To="_10-114">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="494.0" YCoordinate="510.0"/>
+                            <xpdl22:Coordinates XCoordinate="519.0" YCoordinate="510.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-195" Id="_10-233" Name="Solution is effective" To="_10-219">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="1037.0" YCoordinate="340.0"/>
+                            <xpdl22:Coordinates XCoordinate="1149.0" YCoordinate="340.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+            </xpdl22:Transitions>
+        </xpdl22:WorkflowProcess>
+        <xpdl22:WorkflowProcess Id="WFP-40005-2" Name="Scenario 1 - 1st Level Techical Support Agent - Process">
+            <xpdl22:ProcessHeader>
+                <xpdl22:Description/>
+            </xpdl22:ProcessHeader>
+            <xpdl22:Activities>
+                <xpdl22:Activity Id="_10-577" Name="Issue handled by 1st level support">
+                    <xpdl22:Event>
+                        <xpdl22:EndEvent Result="None"/>
+                    </xpdl22:Event>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="32.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="32.0">
+                            <xpdl22:Coordinates XCoordinate="1149.0" YCoordinate="728.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-356">
+                    <xpdl22:Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="42.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="42.0">
+                            <xpdl22:Coordinates XCoordinate="519.0" YCoordinate="723.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity CompletionQuantity="1" Id="_10-303" IsForCompensation="false" Name="Find solution 1st level issue" StartQuantity="1">
+                    <xpdl22:Implementation>
+                        <xpdl22:Task>
+                            <xpdl22:TaskManual/>
+                        </xpdl22:Task>
+                    </xpdl22:Implementation>
+                    <xpdl22:Performers>
+                        <xpdl22:Performer>resource_1st_Level_Techical_Support_Agent</xpdl22:Performer>
+                    </xpdl22:Performers>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="68.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="83.0">
+                            <xpdl22:Coordinates XCoordinate="403.0" YCoordinate="710.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-288" Name="1st level Issue">
+                    <xpdl22:Event>
+                        <xpdl22:StartEvent Trigger="Message">
+                            <xpdl22:TriggerResultMessage CatchThrow="CATCH">
+                                <xpdl22:Message Id="Message_1399929387654"/>
+                            </xpdl22:TriggerResultMessage>
+                        </xpdl22:StartEvent>
+                    </xpdl22:Event>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="30.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="30.0">
+                            <xpdl22:Coordinates XCoordinate="345.0" YCoordinate="729.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity CompletionQuantity="1" Id="_10-380" IsForCompensation="false" Name="Provide solution to Front Office" StartQuantity="1">
+                    <xpdl22:Implementation>
+                        <xpdl22:Task>
+                            <xpdl22:TaskManual/>
+                        </xpdl22:Task>
+                    </xpdl22:Implementation>
+                    <xpdl22:Performers>
+                        <xpdl22:Performer>resource_1st_Level_Techical_Support_Agent</xpdl22:Performer>
+                    </xpdl22:Performers>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="68.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="83.0">
+                            <xpdl22:Coordinates XCoordinate="853.0" YCoordinate="710.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity CompletionQuantity="1" Id="_10-458" IsForCompensation="false" Name="Request 2nd level support" StartQuantity="1">
+                    <xpdl22:Implementation>
+                        <xpdl22:Task>
+                            <xpdl22:TaskManual/>
+                        </xpdl22:Task>
+                    </xpdl22:Implementation>
+                    <xpdl22:Performers>
+                        <xpdl22:Performer>resource_1st_Level_Techical_Support_Agent</xpdl22:Performer>
+                    </xpdl22:Performers>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="68.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="83.0">
+                            <xpdl22:Coordinates XCoordinate="640.0" YCoordinate="806.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-723" Name="Solution received from 2nd level of support">
+                    <xpdl22:Event>
+                        <xpdl22:IntermediateEvent Trigger="Message">
+                            <xpdl22:TriggerResultMessage CatchThrow="CATCH">
+                                <xpdl22:Message Id="Message_1399929387657"/>
+                            </xpdl22:TriggerResultMessage>
+                        </xpdl22:IntermediateEvent>
+                    </xpdl22:Event>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="32.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="32.0">
+                            <xpdl22:Coordinates XCoordinate="878.0" YCoordinate="824.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+            </xpdl22:Activities>
+            <xpdl22:Transitions>
+                <xpdl22:Transition From="_10-380" Id="_10-591" To="_10-577">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="936.0" YCoordinate="744.0"/>
+                            <xpdl22:Coordinates XCoordinate="1149.0" YCoordinate="744.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-356" Id="_10-431" Name="Able to provide  1st level solution" To="_10-380">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="560.0" YCoordinate="744.0"/>
+                            <xpdl22:Coordinates XCoordinate="853.0" YCoordinate="744.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-356" Id="_10-509" Name="Unable to provide 1st level solution" To="_10-458">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="540.0" YCoordinate="765.0"/>
+                            <xpdl22:Coordinates XCoordinate="540.0" YCoordinate="840.0"/>
+                            <xpdl22:Coordinates XCoordinate="640.0" YCoordinate="840.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-303" Id="_10-378" To="_10-356">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="486.0" YCoordinate="744.0"/>
+                            <xpdl22:Coordinates XCoordinate="519.0" YCoordinate="744.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-288" Id="_10-354" To="_10-303">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="375.0" YCoordinate="744.0"/>
+                            <xpdl22:Coordinates XCoordinate="403.0" YCoordinate="744.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-723" Id="_10-744" To="_10-380">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="894.0" YCoordinate="824.0"/>
+                            <xpdl22:Coordinates XCoordinate="894.0" YCoordinate="778.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-458" Id="_10-740" To="_10-723">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="723.0" YCoordinate="840.0"/>
+                            <xpdl22:Coordinates XCoordinate="878.0" YCoordinate="840.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+            </xpdl22:Transitions>
+        </xpdl22:WorkflowProcess>
+        <xpdl22:WorkflowProcess Id="WFP-40005-3" Name="Scenario 1 - Supplier - Process">
+            <xpdl22:ProcessHeader>
+                <xpdl22:Description/>
+            </xpdl22:ProcessHeader>
+            <xpdl22:Activities>
+                <xpdl22:Activity CompletionQuantity="1" Id="_10-794" IsForCompensation="false" Name="Find solution supplier issue" StartQuantity="1">
+                    <xpdl22:Implementation>
+                        <xpdl22:Task>
+                            <xpdl22:TaskManual/>
+                        </xpdl22:Task>
+                    </xpdl22:Implementation>
+                    <xpdl22:Performers>
+                        <xpdl22:Performer>resource_Supplier</xpdl22:Performer>
+                    </xpdl22:Performers>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="68.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="83.0">
+                            <xpdl22:Coordinates XCoordinate="546.0" YCoordinate="1310.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-781" Name="Supplier Issue">
+                    <xpdl22:Event>
+                        <xpdl22:StartEvent Trigger="Message">
+                            <xpdl22:TriggerResultMessage CatchThrow="CATCH">
+                                <xpdl22:Message Id="Message_1399929387659"/>
+                            </xpdl22:TriggerResultMessage>
+                        </xpdl22:StartEvent>
+                    </xpdl22:Event>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="30.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="30.0">
+                            <xpdl22:Coordinates XCoordinate="348.0" YCoordinate="1329.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity CompletionQuantity="1" Id="_10-847" IsForCompensation="false" Name="Provide solution to 2nd level support" StartQuantity="1">
+                    <xpdl22:Implementation>
+                        <xpdl22:Task>
+                            <xpdl22:TaskManual/>
+                        </xpdl22:Task>
+                    </xpdl22:Implementation>
+                    <xpdl22:Performers>
+                        <xpdl22:Performer>resource_Supplier</xpdl22:Performer>
+                    </xpdl22:Performers>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="68.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="83.0">
+                            <xpdl22:Coordinates XCoordinate="853.0" YCoordinate="1310.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-902" Name="Issue handled by supplier">
+                    <xpdl22:Event>
+                        <xpdl22:EndEvent Result="None"/>
+                    </xpdl22:Event>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="32.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="32.0">
+                            <xpdl22:Coordinates XCoordinate="1149.0" YCoordinate="1328.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+            </xpdl22:Activities>
+            <xpdl22:Transitions>
+                <xpdl22:Transition From="_10-794" Id="_10-898" To="_10-847">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="629.0" YCoordinate="1344.0"/>
+                            <xpdl22:Coordinates XCoordinate="853.0" YCoordinate="1344.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-781" Id="_10-845" To="_10-794">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="378.0" YCoordinate="1344.0"/>
+                            <xpdl22:Coordinates XCoordinate="546.0" YCoordinate="1344.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-847" Id="_10-916" To="_10-902">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="936.0" YCoordinate="1344.0"/>
+                            <xpdl22:Coordinates XCoordinate="1149.0" YCoordinate="1344.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+            </xpdl22:Transitions>
+        </xpdl22:WorkflowProcess>
+        <xpdl22:WorkflowProcess Id="WFP-40005-5" Name="Scenario 1 - 2nd Level Techical Support Agent - Process">
+            <xpdl22:ProcessHeader>
+                <xpdl22:Description/>
+            </xpdl22:ProcessHeader>
+            <xpdl22:Activities>
+                <xpdl22:Activity Id="_10-593">
+                    <xpdl22:Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="42.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="42.0">
+                            <xpdl22:Coordinates XCoordinate="519.0" YCoordinate="1025.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity CompletionQuantity="1" Id="_10-670" IsForCompensation="false" Name="Request supplier support" StartQuantity="1">
+                    <xpdl22:Implementation>
+                        <xpdl22:Task>
+                            <xpdl22:TaskManual/>
+                        </xpdl22:Task>
+                    </xpdl22:Implementation>
+                    <xpdl22:Performers>
+                        <xpdl22:Performer>resource_2nd_Level_Techical_Support_Agent</xpdl22:Performer>
+                    </xpdl22:Performers>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="68.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="83.0">
+                            <xpdl22:Coordinates XCoordinate="640.0" YCoordinate="1108.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity CompletionQuantity="1" Id="_10-617" IsForCompensation="false" Name="Provide solution to 1st level support" StartQuantity="1">
+                    <xpdl22:Implementation>
+                        <xpdl22:Task>
+                            <xpdl22:TaskManual/>
+                        </xpdl22:Task>
+                    </xpdl22:Implementation>
+                    <xpdl22:Performers>
+                        <xpdl22:Performer>resource_2nd_Level_Techical_Support_Agent</xpdl22:Performer>
+                    </xpdl22:Performers>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="68.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="83.0">
+                            <xpdl22:Coordinates XCoordinate="853.0" YCoordinate="1012.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-760" Name="Solution received from supplier">
+                    <xpdl22:Event>
+                        <xpdl22:IntermediateEvent Trigger="Message">
+                            <xpdl22:TriggerResultMessage CatchThrow="CATCH">
+                                <xpdl22:Message Id="Message_1399929387658"/>
+                            </xpdl22:TriggerResultMessage>
+                        </xpdl22:IntermediateEvent>
+                    </xpdl22:Event>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="32.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="32.0">
+                            <xpdl22:Coordinates XCoordinate="878.0" YCoordinate="1126.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity CompletionQuantity="1" Id="_10-526" IsForCompensation="false" Name="Find solution 2nd level issue" StartQuantity="1">
+                    <xpdl22:Implementation>
+                        <xpdl22:Task>
+                            <xpdl22:TaskManual/>
+                        </xpdl22:Task>
+                    </xpdl22:Implementation>
+                    <xpdl22:Performers>
+                        <xpdl22:Performer>resource_2nd_Level_Techical_Support_Agent</xpdl22:Performer>
+                    </xpdl22:Performers>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="68.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="83.0">
+                            <xpdl22:Coordinates XCoordinate="403.0" YCoordinate="1012.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-511" Name="2nd  level Issue">
+                    <xpdl22:Event>
+                        <xpdl22:StartEvent Trigger="Message">
+                            <xpdl22:TriggerResultMessage CatchThrow="CATCH">
+                                <xpdl22:Message Id="Message_1399929387656"/>
+                            </xpdl22:TriggerResultMessage>
+                        </xpdl22:StartEvent>
+                    </xpdl22:Event>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="30.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="30.0">
+                            <xpdl22:Coordinates XCoordinate="345.0" YCoordinate="1031.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+                <xpdl22:Activity Id="_10-746" Name="Issue handled by  2nd level support">
+                    <xpdl22:Event>
+                        <xpdl22:EndEvent Result="None"/>
+                    </xpdl22:Event>
+                    <xpdl22:NodeGraphicsInfos>
+                        <xpdl22:NodeGraphicsInfo BorderColor="#000000" FillColor="#ffffff" Height="32.0" IsVisible="true" PageId="_40005" ToolId="Trisotech" Width="32.0">
+                            <xpdl22:Coordinates XCoordinate="1149.0" YCoordinate="1030.0"/>
+                            
+                        </xpdl22:NodeGraphicsInfo>
+                    </xpdl22:NodeGraphicsInfos>
+                </xpdl22:Activity>
+            </xpdl22:Activities>
+            <xpdl22:Transitions>
+                <xpdl22:Transition From="_10-526" Id="_10-615" To="_10-593">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="486.0" YCoordinate="1046.0"/>
+                            <xpdl22:Coordinates XCoordinate="519.0" YCoordinate="1046.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-593" Id="_10-721" Name="Unable to provide 2nd level solution" To="_10-670">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="540.0" YCoordinate="1067.0"/>
+                            <xpdl22:Coordinates XCoordinate="540.0" YCoordinate="1142.0"/>
+                            <xpdl22:Coordinates XCoordinate="640.0" YCoordinate="1142.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-593" Id="_10-668" Name="Able to provide  2nd level solution" To="_10-617">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="560.0" YCoordinate="1046.0"/>
+                            <xpdl22:Coordinates XCoordinate="853.0" YCoordinate="1046.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-670" Id="_10-777" To="_10-760">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="723.0" YCoordinate="1142.0"/>
+                            <xpdl22:Coordinates XCoordinate="878.0" YCoordinate="1142.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-760" Id="_10-779" To="_10-617">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="894.0" YCoordinate="1126.0"/>
+                            <xpdl22:Coordinates XCoordinate="894.0" YCoordinate="1080.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-617" Id="_10-977" To="_10-746">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="936.0" YCoordinate="1046.0"/>
+                            <xpdl22:Coordinates XCoordinate="1149.0" YCoordinate="1046.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+                <xpdl22:Transition From="_10-511" Id="_10-975" To="_10-526">
+                    <xpdl22:ConnectorGraphicsInfos>
+                        <xpdl22:ConnectorGraphicsInfo BorderColor="#000000" IsVisible="true" PageId="_40005" ToolId="Trisotech">
+                            <xpdl22:Coordinates XCoordinate="375.0" YCoordinate="1046.0"/>
+                            <xpdl22:Coordinates XCoordinate="403.0" YCoordinate="1046.0"/>
+                            
+                        </xpdl22:ConnectorGraphicsInfo>
+                    </xpdl22:ConnectorGraphicsInfos>
+                </xpdl22:Transition>
+            </xpdl22:Transitions>
+        </xpdl22:WorkflowProcess>
+    </xpdl22:WorkflowProcesses>
+    <xpdl22:ExtendedAttributes>
+        <xpdl22:ExtendedAttribute Name="trisobpmn:logoChoice" Value="Default"/>
+    </xpdl22:ExtendedAttributes>
+    <bpsim:BPSimData xmlns:bpsim="http://www.bpsim.org/schemas/2.0">
+        <bpsim:Scenario id="S1" name="1 - Control perspective">
+            <bpsim:ScenarioParameters baseTimeUnit="min" replication="3">
+                <bpsim:Duration>
+                    <bpsim:DurationParameter value="P1M"/>
+                </bpsim:Duration>
+                <bpsim:Start>
+                    <bpsim:DateTimeParameter value="2016-01-01T06:00:00"/>
+                </bpsim:Start>
+            </bpsim:ScenarioParameters>
+            <bpsim:ElementParameters elementRef="_10-42">
+                <bpsim:ControlParameters>
+                    <bpsim:InterTriggerTimer>
+                        <bpsim:TriangularDistribution max="2.5" min="0.35" mode="2"/>
+                    </bpsim:InterTriggerTimer>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-189">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="60"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-286">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="40"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-233">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="15"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-456">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="85"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-431">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="70"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-509">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="30"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-668">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="80"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-721">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="20"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-781">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-511">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-288">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-902">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-219">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-577">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-746">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+        </bpsim:Scenario>
+        <bpsim:Scenario id="S2" inherits="S1" name="2 - Temporal perspective">
+            <bpsim:ScenarioParameters>
+                <bpsim:Warmup>
+                    <bpsim:DurationParameter value="P7D"/>
+                </bpsim:Warmup>
+            </bpsim:ScenarioParameters>
+            <bpsim:ElementParameters elementRef="_10-57">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="4" min="0" standardDeviation="0.5"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-920">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="1" min="0" standardDeviation="0.5"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-235">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:DurationParameter value="PT30S"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-138">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="10" min="0" standardDeviation="2.5"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-303">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="4" min="0" standardDeviation="0.5"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-458">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:DurationParameter value="PT30S"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-380">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="1" min="0" standardDeviation="0.5"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-526">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="7" min="0" standardDeviation="0.5"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-670">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="3" min="0" standardDeviation="0.5"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-617">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="1" min="0" standardDeviation="0.5"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-794">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="300" min="0" standardDeviation="30"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-847">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="2" min="0" standardDeviation="0.5"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-219">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-577">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-746">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+        </bpsim:Scenario>
+        <bpsim:Scenario id="S3" inherits="S2" name="3 - Resource perspective">
+            <bpsim:ScenarioParameters baseResultFrequency="P1D" baseResultFrequencyCumul="false">
+          </bpsim:ScenarioParameters>
+            <bpsim:ElementParameters elementRef="_10-42">
+                <bpsim:ControlParameters>
+                    <bpsim:InterTriggerTimer>
+                        <bpsim:FloatingParameter value="1.0"/>
+                        <bpsim:FloatingParameter validFor="C1" value="0.35"/>
+                        <bpsim:FloatingParameter validFor="C2" value="0.86"/>
+                        <bpsim:FloatingParameter validFor="C3" value="0.55"/>
+                        <bpsim:FloatingParameter validFor="C4" value="1.0"/>
+                        <bpsim:FloatingParameter validFor="C5" value="0.43"/>
+                        <bpsim:FloatingParameter validFor="C6" value="0.67"/>
+                        <bpsim:FloatingParameter validFor="C7" value="2.0"/>
+                    </bpsim:InterTriggerTimer>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-57">
+                <bpsim:ResourceParameters>
+                    <bpsim:Selection>
+                        <bpsim:ExpressionParameter value="getResource('resource_Front_Office', 1)"/>
+                    </bpsim:Selection>
+                </bpsim:ResourceParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:QueueLength>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:QueueLength>
+                </bpsim:PropertyParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-920">
+                <bpsim:ResourceParameters>
+                    <bpsim:Selection>
+                        <bpsim:ExpressionParameter value="getResource('resource_Front_Office', 1)"/>
+                    </bpsim:Selection>
+                </bpsim:ResourceParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:QueueLength>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:QueueLength>
+                </bpsim:PropertyParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-235">
+                <bpsim:ResourceParameters>
+                    <bpsim:Selection>
+                        <bpsim:ExpressionParameter value="getResource('resource_Front_Office', 1)"/>
+                    </bpsim:Selection>
+                </bpsim:ResourceParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:QueueLength>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:QueueLength>
+                </bpsim:PropertyParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-138">
+                <bpsim:ResourceParameters>
+                    <bpsim:Selection>
+                        <bpsim:ExpressionParameter value="getResource('resource_Front_Office', 1)"/>
+                    </bpsim:Selection>
+                </bpsim:ResourceParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:QueueLength>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:QueueLength>
+                </bpsim:PropertyParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-303">
+                <bpsim:ResourceParameters>
+                    <bpsim:Selection>
+                        <bpsim:ExpressionParameter value="getResource('resource_1st_Level_Techical_Support_Agent', 1)"/>
+                    </bpsim:Selection>
+                </bpsim:ResourceParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:QueueLength>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:QueueLength>
+                </bpsim:PropertyParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-458">
+                <bpsim:ResourceParameters>
+                    <bpsim:Selection>
+                        <bpsim:ExpressionParameter value="getResource('resource_1st_Level_Techical_Support_Agent', 1)"/>
+                    </bpsim:Selection>
+                </bpsim:ResourceParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:QueueLength>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:QueueLength>
+                </bpsim:PropertyParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-380">
+                <bpsim:ResourceParameters>
+                    <bpsim:Selection>
+                        <bpsim:ExpressionParameter value="getResource('resource_1st_Level_Techical_Support_Agent', 1)"/>
+                    </bpsim:Selection>
+                </bpsim:ResourceParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:QueueLength>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:QueueLength>
+                </bpsim:PropertyParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-526">
+                <bpsim:ResourceParameters>
+                    <bpsim:Selection>
+                        <bpsim:ExpressionParameter value="getResource('resource_2nd_Level_Techical_Support_Agent', 1)"/>
+                    </bpsim:Selection>
+                </bpsim:ResourceParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:QueueLength>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:QueueLength>
+                </bpsim:PropertyParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-670">
+                <bpsim:ResourceParameters>
+                    <bpsim:Selection>
+                        <bpsim:ExpressionParameter value="getResource('resource_2nd_Level_Techical_Support_Agent', 1)"/>
+                    </bpsim:Selection>
+                </bpsim:ResourceParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:QueueLength>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:QueueLength>
+                </bpsim:PropertyParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-617">
+                <bpsim:ResourceParameters>
+                    <bpsim:Selection>
+                        <bpsim:ExpressionParameter value="getResource('resource_2nd_Level_Techical_Support_Agent', 1)"/>
+                    </bpsim:Selection>
+                </bpsim:ResourceParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:QueueLength>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:QueueLength>
+                </bpsim:PropertyParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-794">
+                <bpsim:ResourceParameters>
+                    <bpsim:Selection>
+                        <bpsim:ExpressionParameter value="getResource('resource_Supplier', 1)"/>
+                    </bpsim:Selection>
+                </bpsim:ResourceParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:QueueLength>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:QueueLength>
+                </bpsim:PropertyParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-847">
+                <bpsim:ResourceParameters>
+                    <bpsim:Selection>
+                        <bpsim:ExpressionParameter value="getResource('resource_Supplier', 1)"/>
+                    </bpsim:Selection>
+                </bpsim:ResourceParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:QueueLength>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:QueueLength>
+                </bpsim:PropertyParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:Calendar id="C1" name="shift-6-9am">
+            BEGIN:VCALENDAR
+            BEGIN:VEVENT
+            UID:1356035064823@localhost
+            DTSTART:20160101T060000
+            DTEND:20160101T090000
+            RRULE:FREQ=DAILY
+            END:VEVENT
+            PRODID:PAF Editor
+            VERSION:2.0
+            END:VCALENDAR
+          </bpsim:Calendar>
+            <bpsim:Calendar id="C2" name="shift-9-noon">
+            BEGIN:VCALENDAR
+            BEGIN:VEVENT
+            DTSTAMP:20160101T000000
+            UID:1356035100473@localhost
+            DTSTART:20160101T090000
+            DTEND:20160101T120000
+            RRULE:FREQ=DAILY
+            END:VEVENT
+            PRODID:PAF Editor
+            VERSION:2.0
+            END:VCALENDAR
+          </bpsim:Calendar>
+            <bpsim:Calendar id="C3" name="shift-noon-3pm">
+            BEGIN:VCALENDAR
+            BEGIN:VEVENT
+            DTSTAMP:20160101T000000
+            UID:1356035129707@localhost
+            DTSTART:20160101T120000
+            DTEND:20160101T150000
+            RRULE:FREQ=DAILY
+            END:VEVENT
+            PRODID:PAF Editor
+            VERSION:2.0
+            END:VCALENDAR
+          </bpsim:Calendar>
+            <bpsim:Calendar id="C4" name="shift-3-6pm">
+            BEGIN:VCALENDAR
+            BEGIN:VEVENT
+            DTSTAMP:20160101T000000
+            UID:1356035191095@localhost
+            DTSTART:20160101T150000
+            DTEND:20160101T180000
+            RRULE:FREQ=DAILY
+            END:VEVENT
+            PRODID:PAF Editor
+            VERSION:2.0
+            END:VCALENDAR
+          </bpsim:Calendar>
+            <bpsim:Calendar id="C5" name="shift-6-10pm">
+            BEGIN:VCALENDAR
+            BEGIN:VEVENT
+            DTSTAMP:20160101T000000
+            UID:1356035226921@localhost
+            DTSTART:20160101T180000
+            DTEND:20160101T220000
+            RRULE:FREQ=DAILY
+            END:VEVENT
+            PRODID:PAF Editor
+            VERSION:2.0
+            END:VCALENDAR
+          </bpsim:Calendar>
+            <bpsim:Calendar id="C6" name="shift-10-1am">
+            BEGIN:VCALENDAR
+            BEGIN:VEVENT
+            DTSTAMP:20160101T000000
+            UID:1356035246845@localhost
+            DTSTART:20160101T220000
+            DTEND:20160102T010000
+            RRULE:FREQ=DAILY
+            END:VEVENT
+            PRODID:PAF Editor
+            VERSION:2.0
+            END:VCALENDAR
+          </bpsim:Calendar>
+            <bpsim:Calendar id="C7" name="shift-1-6am">
+            BEGIN:VCALENDAR
+            BEGIN:VEVENT
+            DTSTAMP:20160101T000000
+            UID:1356035272706@localhost
+            DTSTART:20160102T010000
+            DTEND:20160102T060000
+            RRULE:FREQ=DAILY
+            END:VEVENT
+            PRODID:PAF Editor
+            VERSION:2.0
+            END:VCALENDAR
+          </bpsim:Calendar>
+            <bpsim:Calendar id="C8" name="shift-9am-10pm-weekdays">
+            BEGIN:VCALENDAR
+            BEGIN:VEVENT
+            DTSTAMP:20160101T000000
+            UID:1356035303891@localhost
+            DTSTART:20160101T090000
+            DTEND:20160101T220000
+            RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR
+            END:VEVENT
+            PRODID:PAF Editor
+            VERSION:2.0
+            END:VCALENDAR
+          </bpsim:Calendar>
+        </bpsim:Scenario>
+    </bpsim:BPSimData>
+</xpdl22:Package>

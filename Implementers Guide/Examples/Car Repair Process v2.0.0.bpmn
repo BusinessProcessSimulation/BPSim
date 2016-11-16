@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<semantic:definitions id="_1364754596385" name="Car Repair Process v2.0.0" targetNamespace="http://www.trisotech.com/definitions/_1364754596385" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:bpsim="http://www.bpsim.org/schemas/2.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:semantic="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <semantic:process isExecutable="false" id="_6">
+        <semantic:dataObject isCollection="false" id="DF1364754596565"/>
+        <semantic:dataObject isCollection="false" id="DF1364754596566"/>
+        <semantic:startEvent name="Customer Arrives" id="_51BDA265-2FF5-40CB-B68D-1FBF9DAAA74C">
+            <semantic:outgoing>_896FB358-BF3A-4609-8E83-8405D72DEA9B</semantic:outgoing>
+        </semantic:startEvent>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Make Estimate" id="_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA">
+            <semantic:incoming>_896FB358-BF3A-4609-8E83-8405D72DEA9B</semantic:incoming>
+            <semantic:outgoing>_222A5787-C138-497B-8638-02121C5E0477</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput id="Din1364754596628"/>
+                <semantic:dataOutput id="Dout1364754596626"/>
+                <semantic:inputSet>
+                    <semantic:dataInputRefs>Din1364754596628</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet>
+                    <semantic:dataOutputRefs>Dout1364754596626</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_9EB2F46F-FA87-4DB3-9EA5-4CBA7FC355B2">
+                <semantic:sourceRef>_6F155721-2EB2-4570-BFE0-E39C0B3EAD82</semantic:sourceRef>
+                <semantic:targetRef>Din1364754596628</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_D5635CA0-2E65-458D-A25B-B7EAC7E888E2">
+                <semantic:sourceRef>Dout1364754596626</semantic:sourceRef>
+                <semantic:targetRef>_44E5E2EF-2B2F-4689-8531-4D451808B0A6</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:task>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Verify if Estimate Accepted" id="_D4804AD8-3EE4-47F1-942C-D9EAEA2811F0">
+            <semantic:incoming>_222A5787-C138-497B-8638-02121C5E0477</semantic:incoming>
+            <semantic:outgoing>_1F31B20E-FE41-440D-9D44-E7437D1639C6</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput id="Din1364754596627"/>
+                <semantic:inputSet>
+                    <semantic:dataInputRefs>Din1364754596627</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet/>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_C2B6A48C-B636-4186-955B-9C73CD3FA580">
+                <semantic:sourceRef>_44E5E2EF-2B2F-4689-8531-4D451808B0A6</semantic:sourceRef>
+                <semantic:targetRef>Din1364754596627</semantic:targetRef>
+            </semantic:dataInputAssociation>
+        </semantic:task>
+        <semantic:exclusiveGateway gatewayDirection="Unspecified" name="Accepted?" id="_F7498C3B-5925-415A-80D7-D16758B353C9">
+            <semantic:incoming>_1F31B20E-FE41-440D-9D44-E7437D1639C6</semantic:incoming>
+            <semantic:outgoing>_3654E294-536A-4CD2-9950-11F02657EE60</semantic:outgoing>
+            <semantic:outgoing>_3B161ED4-4C10-4349-9A2D-B4E002D5EC0E</semantic:outgoing>
+        </semantic:exclusiveGateway>
+        <semantic:endEvent name="Initial Estimate Not Accepted" id="_87E52808-857B-45B0-93E8-F6D7AC0B4B3E">
+            <semantic:incoming>_3654E294-536A-4CD2-9950-11F02657EE60</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:subProcess triggeredByEvent="false" completionQuantity="1" isForCompensation="false" startQuantity="1" name="Repair Car" id="_EBE375AE-E49A-47F7-8E04-DA6A1532ECC2">
+            <semantic:incoming>_3B161ED4-4C10-4349-9A2D-B4E002D5EC0E</semantic:incoming>
+            <semantic:outgoing>_0884CEBC-44CE-4BE2-958F-8941946BDA64</semantic:outgoing>
+            <semantic:startEvent name="Start Repairs" id="_FA77D7D8-9C02-4006-942A-B003AEDA5E3C">
+                <semantic:outgoing>_77A40DB9-8B5A-4E50-9138-ADCA63E4A219</semantic:outgoing>
+            </semantic:startEvent>
+            <semantic:exclusiveGateway gatewayDirection="Unspecified" name="" id="_7D509478-6734-4004-B618-32339FA33D31">
+                <semantic:incoming>_77A40DB9-8B5A-4E50-9138-ADCA63E4A219</semantic:incoming>
+                <semantic:incoming>_9C46FDB0-2EBD-4B2F-A72A-0189A4D76A73</semantic:incoming>
+                <semantic:outgoing>_E2740126-A38E-40E2-9FA9-554778B51381</semantic:outgoing>
+            </semantic:exclusiveGateway>
+            <semantic:subProcess triggeredByEvent="true" completionQuantity="1" isForCompensation="false" startQuantity="1" name="" id="_AF4F8D5E-E399-4ED8-992F-9AA653C17D6E">
+                <semantic:startEvent isInterrupting="false" name="Customer Requests Additional  Repairs" id="_25E36E2C-9196-4170-8BA3-52DDF55D177E">
+                    <semantic:outgoing>_62BD6E5E-B5C0-4719-86CE-D5E30A1D128F</semantic:outgoing>
+                    <semantic:signalEventDefinition/>
+                </semantic:startEvent>
+                <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Add Additional Issue to List" id="_D226B9E0-0194-481E-AAEC-32473D45FEEF">
+                    <semantic:incoming>_62BD6E5E-B5C0-4719-86CE-D5E30A1D128F</semantic:incoming>
+                    <semantic:outgoing>_24A3FEEC-8DE6-42DC-9B85-D076EB8909A4</semantic:outgoing>
+                    <semantic:ioSpecification>
+                        <semantic:dataOutput id="Dout1364754596601"/>
+                        <semantic:inputSet/>
+                        <semantic:outputSet>
+                            <semantic:dataOutputRefs>Dout1364754596601</semantic:dataOutputRefs>
+                        </semantic:outputSet>
+                    </semantic:ioSpecification>
+                    <semantic:dataOutputAssociation id="_94CD5662-8EB9-4B23-A486-8B6970314AD7">
+                        <semantic:sourceRef>Dout1364754596601</semantic:sourceRef>
+                        <semantic:targetRef>_C96534C9-934E-415D-8903-28DA8712B25E</semantic:targetRef>
+                    </semantic:dataOutputAssociation>
+                </semantic:task>
+                <semantic:endEvent name="Issue List Amended By Customer" id="_4C551546-C127-4CD9-9106-78A3FC8978A6">
+                    <semantic:incoming>_24A3FEEC-8DE6-42DC-9B85-D076EB8909A4</semantic:incoming>
+                </semantic:endEvent>
+                <semantic:dataObjectReference dataObjectRef="DF1364754596565" name="Itemized  Issues" id="_C96534C9-934E-415D-8903-28DA8712B25E">
+                    <semantic:dataState name="Amended"/>
+                </semantic:dataObjectReference>
+                <semantic:sequenceFlow sourceRef="_25E36E2C-9196-4170-8BA3-52DDF55D177E" targetRef="_D226B9E0-0194-481E-AAEC-32473D45FEEF" name="" id="_62BD6E5E-B5C0-4719-86CE-D5E30A1D128F"/>
+                <semantic:sequenceFlow sourceRef="_D226B9E0-0194-481E-AAEC-32473D45FEEF" targetRef="_4C551546-C127-4CD9-9106-78A3FC8978A6" name="" id="_24A3FEEC-8DE6-42DC-9B85-D076EB8909A4"/>
+            </semantic:subProcess>
+            <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Take Apart for Issue" id="_91C1F9A1-0EB9-4FD4-A2A7-99C2E8C34854">
+                <semantic:incoming>_E2740126-A38E-40E2-9FA9-554778B51381</semantic:incoming>
+                <semantic:outgoing>_F165F4A8-69B1-4B19-A1A4-470BDE12FA77</semantic:outgoing>
+            </semantic:task>
+            <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Inspect for Issue" id="_A9E2794B-4C41-429B-9C04-46C5B8741DDC">
+                <semantic:incoming>_F165F4A8-69B1-4B19-A1A4-470BDE12FA77</semantic:incoming>
+                <semantic:outgoing>_FE1BBBD3-1730-4BC0-895D-76106317615D</semantic:outgoing>
+            </semantic:task>
+            <semantic:exclusiveGateway gatewayDirection="Unspecified" name="" id="_EA5D13A2-32CB-4F3D-80EF-F0886538C228">
+                <semantic:incoming>_FE1BBBD3-1730-4BC0-895D-76106317615D</semantic:incoming>
+                <semantic:incoming>_F298A83E-5AD6-4BB6-95AF-E5B0A26A51FC</semantic:incoming>
+                <semantic:outgoing>_53EFF0AE-C44D-4EA4-A3AF-FA7E52B4CE52</semantic:outgoing>
+            </semantic:exclusiveGateway>
+            <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Handle New Found Issue" id="_8040CF1A-3CAA-4A98-8E94-DD405EF233E9">
+                <semantic:incoming>_BEFA7BF4-D1C2-47CB-B0CD-EF87E541B1BC</semantic:incoming>
+                <semantic:outgoing>_F298A83E-5AD6-4BB6-95AF-E5B0A26A51FC</semantic:outgoing>
+            </semantic:task>
+            <semantic:exclusiveGateway gatewayDirection="Unspecified" name="" id="_5C0BF369-3360-43C3-9792-3E6492BA7291">
+                <semantic:incoming>_53EFF0AE-C44D-4EA4-A3AF-FA7E52B4CE52</semantic:incoming>
+                <semantic:outgoing>_751A4C0A-FC0F-441E-A587-4016BE8101B3</semantic:outgoing>
+                <semantic:outgoing>_BEFA7BF4-D1C2-47CB-B0CD-EF87E541B1BC</semantic:outgoing>
+            </semantic:exclusiveGateway>
+            <semantic:subProcess triggeredByEvent="true" completionQuantity="1" isForCompensation="false" startQuantity="1" name="" id="_C89D1737-9813-44C2-A5D5-87649AE7AEC6">
+                <semantic:startEvent isInterrupting="true" name="Repairs Aborted" id="_F9A272EE-D325-44CF-AFFC-4A615D2C9971">
+                    <semantic:outgoing>_CF5A1710-35F8-48B6-85FD-A90C99FEC5B3</semantic:outgoing>
+                    <semantic:signalEventDefinition/>
+                </semantic:startEvent>
+                <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Prepare Car for remittance" id="_52CCF00D-C0E3-4931-8D4E-6C989E317A07">
+                    <semantic:incoming>_CF5A1710-35F8-48B6-85FD-A90C99FEC5B3</semantic:incoming>
+                    <semantic:outgoing>_19517CEB-6A0E-4B88-8911-FEEEFE3B55CE</semantic:outgoing>
+                    <semantic:ioSpecification>
+                        <semantic:dataOutput id="Dout1364754596612"/>
+                        <semantic:inputSet/>
+                        <semantic:outputSet>
+                            <semantic:dataOutputRefs>Dout1364754596612</semantic:dataOutputRefs>
+                        </semantic:outputSet>
+                    </semantic:ioSpecification>
+                    <semantic:dataOutputAssociation id="_9DBCFE15-F025-4A3B-A3F7-41BFCFA182D1">
+                        <semantic:sourceRef>Dout1364754596612</semantic:sourceRef>
+                        <semantic:targetRef>_4134CEB9-F012-4F9E-9EF3-932E18E731E5</semantic:targetRef>
+                    </semantic:dataOutputAssociation>
+                </semantic:task>
+                <semantic:endEvent name="Repairs Aborted" id="_2BBAB508-4026-40F7-8FC3-23E68E77EE46">
+                    <semantic:incoming>_19517CEB-6A0E-4B88-8911-FEEEFE3B55CE</semantic:incoming>
+                    <semantic:terminateEventDefinition/>
+                </semantic:endEvent>
+                <semantic:dataObjectReference dataObjectRef="DF1364754596565" name="Itemized  Issues" id="_4134CEB9-F012-4F9E-9EF3-932E18E731E5">
+                    <semantic:dataState name="Completed Items"/>
+                </semantic:dataObjectReference>
+                <semantic:sequenceFlow sourceRef="_F9A272EE-D325-44CF-AFFC-4A615D2C9971" targetRef="_52CCF00D-C0E3-4931-8D4E-6C989E317A07" name="" id="_CF5A1710-35F8-48B6-85FD-A90C99FEC5B3"/>
+                <semantic:sequenceFlow sourceRef="_52CCF00D-C0E3-4931-8D4E-6C989E317A07" targetRef="_2BBAB508-4026-40F7-8FC3-23E68E77EE46" name="" id="_19517CEB-6A0E-4B88-8911-FEEEFE3B55CE"/>
+            </semantic:subProcess>
+            <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Repair Issue" id="_071B5D0A-5225-4E55-9105-8D15169DAC96">
+                <semantic:incoming>_751A4C0A-FC0F-441E-A587-4016BE8101B3</semantic:incoming>
+                <semantic:outgoing>_7BCC27D0-D619-4895-92F5-4516D9583479</semantic:outgoing>
+            </semantic:task>
+            <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Verify if more Issues on Itemized List" id="_2A752317-508C-4BB1-9AE7-49FBC7391B2B">
+                <semantic:incoming>_7BCC27D0-D619-4895-92F5-4516D9583479</semantic:incoming>
+                <semantic:outgoing>_8C74C362-DDEF-48B9-AED2-E4034E917A40</semantic:outgoing>
+                <semantic:ioSpecification>
+                    <semantic:dataInput id="Din1364754596619"/>
+                    <semantic:inputSet>
+                        <semantic:dataInputRefs>Din1364754596619</semantic:dataInputRefs>
+                    </semantic:inputSet>
+                    <semantic:outputSet/>
+                </semantic:ioSpecification>
+                <semantic:dataInputAssociation id="_7586D519-92CA-4824-93B9-59E925689D65">
+                    <semantic:sourceRef>_A5699C3D-74E0-497C-8B62-607B9909A0C9</semantic:sourceRef>
+                    <semantic:targetRef>Din1364754596619</semantic:targetRef>
+                </semantic:dataInputAssociation>
+            </semantic:task>
+            <semantic:exclusiveGateway gatewayDirection="Unspecified" name="Have further issues?" id="_B78F09D7-A493-4FDC-B20C-B251C7405D95">
+                <semantic:incoming>_8C74C362-DDEF-48B9-AED2-E4034E917A40</semantic:incoming>
+                <semantic:outgoing>_9C46FDB0-2EBD-4B2F-A72A-0189A4D76A73</semantic:outgoing>
+                <semantic:outgoing>_4799D2B0-A204-4A08-94ED-796C25D9AE57</semantic:outgoing>
+            </semantic:exclusiveGateway>
+            <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Prepare Car for Remittance" id="_DFFBC045-8147-468B-BC85-DAF1134E19CF">
+                <semantic:incoming>_4799D2B0-A204-4A08-94ED-796C25D9AE57</semantic:incoming>
+                <semantic:outgoing>_56B35746-D946-481B-95EF-27D2CB8F4D29</semantic:outgoing>
+            </semantic:task>
+            <semantic:endEvent name="Repairs Completed" id="_B67579E4-E038-4D9D-AA46-A3F9628CADA1">
+                <semantic:incoming>_56B35746-D946-481B-95EF-27D2CB8F4D29</semantic:incoming>
+            </semantic:endEvent>
+            <semantic:dataObjectReference dataObjectRef="DF1364754596565" name="Itemized  Issues" id="_A5699C3D-74E0-497C-8B62-607B9909A0C9">
+                <semantic:dataState name="Accepted"/>
+            </semantic:dataObjectReference>
+            <semantic:sequenceFlow sourceRef="_FA77D7D8-9C02-4006-942A-B003AEDA5E3C" targetRef="_7D509478-6734-4004-B618-32339FA33D31" name="" id="_77A40DB9-8B5A-4E50-9138-ADCA63E4A219"/>
+            <semantic:sequenceFlow sourceRef="_7D509478-6734-4004-B618-32339FA33D31" targetRef="_91C1F9A1-0EB9-4FD4-A2A7-99C2E8C34854" name="" id="_E2740126-A38E-40E2-9FA9-554778B51381"/>
+            <semantic:sequenceFlow sourceRef="_B78F09D7-A493-4FDC-B20C-B251C7405D95" targetRef="_7D509478-6734-4004-B618-32339FA33D31" name="More Issues to Repair" id="_9C46FDB0-2EBD-4B2F-A72A-0189A4D76A73"/>
+            <semantic:sequenceFlow sourceRef="_B78F09D7-A493-4FDC-B20C-B251C7405D95" targetRef="_DFFBC045-8147-468B-BC85-DAF1134E19CF" name="No More Issues to Repair" id="_4799D2B0-A204-4A08-94ED-796C25D9AE57"/>
+            <semantic:sequenceFlow sourceRef="_91C1F9A1-0EB9-4FD4-A2A7-99C2E8C34854" targetRef="_A9E2794B-4C41-429B-9C04-46C5B8741DDC" name="" id="_F165F4A8-69B1-4B19-A1A4-470BDE12FA77"/>
+            <semantic:sequenceFlow sourceRef="_EA5D13A2-32CB-4F3D-80EF-F0886538C228" targetRef="_5C0BF369-3360-43C3-9792-3E6492BA7291" name="" id="_53EFF0AE-C44D-4EA4-A3AF-FA7E52B4CE52"/>
+            <semantic:sequenceFlow sourceRef="_5C0BF369-3360-43C3-9792-3E6492BA7291" targetRef="_071B5D0A-5225-4E55-9105-8D15169DAC96" name="No Added  Issue Found" id="_751A4C0A-FC0F-441E-A587-4016BE8101B3"/>
+            <semantic:sequenceFlow sourceRef="_5C0BF369-3360-43C3-9792-3E6492BA7291" targetRef="_8040CF1A-3CAA-4A98-8E94-DD405EF233E9" name="New Issue  Found" id="_BEFA7BF4-D1C2-47CB-B0CD-EF87E541B1BC"/>
+            <semantic:sequenceFlow sourceRef="_A9E2794B-4C41-429B-9C04-46C5B8741DDC" targetRef="_EA5D13A2-32CB-4F3D-80EF-F0886538C228" name="" id="_FE1BBBD3-1730-4BC0-895D-76106317615D"/>
+            <semantic:sequenceFlow sourceRef="_8040CF1A-3CAA-4A98-8E94-DD405EF233E9" targetRef="_EA5D13A2-32CB-4F3D-80EF-F0886538C228" name="" id="_F298A83E-5AD6-4BB6-95AF-E5B0A26A51FC"/>
+            <semantic:sequenceFlow sourceRef="_071B5D0A-5225-4E55-9105-8D15169DAC96" targetRef="_2A752317-508C-4BB1-9AE7-49FBC7391B2B" name="" id="_7BCC27D0-D619-4895-92F5-4516D9583479"/>
+            <semantic:sequenceFlow sourceRef="_2A752317-508C-4BB1-9AE7-49FBC7391B2B" targetRef="_B78F09D7-A493-4FDC-B20C-B251C7405D95" name="" id="_8C74C362-DDEF-48B9-AED2-E4034E917A40"/>
+            <semantic:sequenceFlow sourceRef="_DFFBC045-8147-468B-BC85-DAF1134E19CF" targetRef="_B67579E4-E038-4D9D-AA46-A3F9628CADA1" name="" id="_56B35746-D946-481B-95EF-27D2CB8F4D29"/>
+        </semantic:subProcess>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Prepare Invoice" id="_956694A6-DFD0-4422-800E-A7DF51A627C0">
+            <semantic:incoming>_0884CEBC-44CE-4BE2-958F-8941946BDA64</semantic:incoming>
+            <semantic:outgoing>_79CF3D66-DDC0-4E70-A721-206B98C9106D</semantic:outgoing>
+        </semantic:task>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Remit Car" id="_78172A06-7EC8-47CC-B49B-01EAD0676195">
+            <semantic:incoming>_CB71865E-954A-4D3D-874F-8DB33A5B391B</semantic:incoming>
+            <semantic:outgoing>_9088D441-44C5-462B-8695-47D60A7BC451</semantic:outgoing>
+        </semantic:task>
+        <semantic:endEvent name="Customer Leaves Shop" id="_4CFC937C-2E42-4671-859E-42E710931963">
+            <semantic:incoming>_9088D441-44C5-462B-8695-47D60A7BC451</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Accept Payment" id="_12A4A22E-9449-4E50-BDFC-AC00C8DE8660">
+            <semantic:incoming>_79CF3D66-DDC0-4E70-A721-206B98C9106D</semantic:incoming>
+            <semantic:outgoing>_CB71865E-954A-4D3D-874F-8DB33A5B391B</semantic:outgoing>
+        </semantic:task>
+        <semantic:dataObjectReference dataObjectRef="DF1364754596565" name="Itemized  Issues" id="_44E5E2EF-2B2F-4689-8531-4D451808B0A6">
+            <semantic:dataState name="Estimated"/>
+        </semantic:dataObjectReference>
+        <semantic:dataObjectReference dataObjectRef="DF1364754596566" name="Reported Issues" id="_6F155721-2EB2-4570-BFE0-E39C0B3EAD82"/>
+        <semantic:sequenceFlow sourceRef="_51BDA265-2FF5-40CB-B68D-1FBF9DAAA74C" targetRef="_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA" name="" id="_896FB358-BF3A-4609-8E83-8405D72DEA9B"/>
+        <semantic:sequenceFlow sourceRef="_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA" targetRef="_D4804AD8-3EE4-47F1-942C-D9EAEA2811F0" name="" id="_222A5787-C138-497B-8638-02121C5E0477"/>
+        <semantic:sequenceFlow sourceRef="_D4804AD8-3EE4-47F1-942C-D9EAEA2811F0" targetRef="_F7498C3B-5925-415A-80D7-D16758B353C9" name="" id="_1F31B20E-FE41-440D-9D44-E7437D1639C6"/>
+        <semantic:sequenceFlow sourceRef="_F7498C3B-5925-415A-80D7-D16758B353C9" targetRef="_87E52808-857B-45B0-93E8-F6D7AC0B4B3E" name="Initial Estimate Not Accepted" id="_3654E294-536A-4CD2-9950-11F02657EE60"/>
+        <semantic:sequenceFlow sourceRef="_F7498C3B-5925-415A-80D7-D16758B353C9" targetRef="_EBE375AE-E49A-47F7-8E04-DA6A1532ECC2" name="Initial Estimate Accepted" id="_3B161ED4-4C10-4349-9A2D-B4E002D5EC0E"/>
+        <semantic:sequenceFlow sourceRef="_78172A06-7EC8-47CC-B49B-01EAD0676195" targetRef="_4CFC937C-2E42-4671-859E-42E710931963" name="" id="_9088D441-44C5-462B-8695-47D60A7BC451"/>
+        <semantic:sequenceFlow sourceRef="_EBE375AE-E49A-47F7-8E04-DA6A1532ECC2" targetRef="_956694A6-DFD0-4422-800E-A7DF51A627C0" name="" id="_0884CEBC-44CE-4BE2-958F-8941946BDA64"/>
+        <semantic:sequenceFlow sourceRef="_956694A6-DFD0-4422-800E-A7DF51A627C0" targetRef="_12A4A22E-9449-4E50-BDFC-AC00C8DE8660" name="" id="_79CF3D66-DDC0-4E70-A721-206B98C9106D"/>
+        <semantic:sequenceFlow sourceRef="_12A4A22E-9449-4E50-BDFC-AC00C8DE8660" targetRef="_78172A06-7EC8-47CC-B49B-01EAD0676195" name="" id="_CB71865E-954A-4D3D-874F-8DB33A5B391B"/>
+    </semantic:process>
+    <bpmndi:BPMNDiagram documentation="" id="Trisotech_Visio-_6" name="Car Repair" resolution="96.00000267028808">
+        <bpmndi:BPMNPlane bpmnElement="_6">
+            <bpmndi:BPMNShape bpmnElement="_51BDA265-2FF5-40CB-B68D-1FBF9DAAA74C" id="S1364754596588__51BDA265-2FF5-40CB-B68D-1FBF9DAAA74C">
+                <dc:Bounds height="30.0" width="30.0" x="101.0" y="426.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA" id="S1364754596589__BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA">
+                <dc:Bounds height="68.0" width="83.0" x="167.0" y="407.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_D4804AD8-3EE4-47F1-942C-D9EAEA2811F0" id="S1364754596590__D4804AD8-3EE4-47F1-942C-D9EAEA2811F0">
+                <dc:Bounds height="68.0" width="83.0" x="287.0" y="407.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_F7498C3B-5925-415A-80D7-D16758B353C9" isMarkerVisible="true" id="S1364754596591__F7498C3B-5925-415A-80D7-D16758B353C9">
+                <dc:Bounds height="42.0" width="42.0" x="407.0" y="420.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_87E52808-857B-45B0-93E8-F6D7AC0B4B3E" id="S1364754596592__87E52808-857B-45B0-93E8-F6D7AC0B4B3E">
+                <dc:Bounds height="32.0" width="32.0" x="462.0" y="548.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_EBE375AE-E49A-47F7-8E04-DA6A1532ECC2" isExpanded="true" id="S1364754596593__EBE375AE-E49A-47F7-8E04-DA6A1532ECC2">
+                <dc:Bounds height="720.0" width="1327.0" x="627.0" y="24.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_FA77D7D8-9C02-4006-942A-B003AEDA5E3C" id="S1364754596594__FA77D7D8-9C02-4006-942A-B003AEDA5E3C">
+                <dc:Bounds height="30.0" width="30.0" x="667.0" y="268.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_7D509478-6734-4004-B618-32339FA33D31" isMarkerVisible="true" id="S1364754596595__7D509478-6734-4004-B618-32339FA33D31">
+                <dc:Bounds height="42.0" width="42.0" x="734.0" y="263.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_AF4F8D5E-E399-4ED8-992F-9AA653C17D6E" isExpanded="true" id="S1364754596596__AF4F8D5E-E399-4ED8-992F-9AA653C17D6E">
+                <dc:Bounds height="226.0" width="426.0" x="801.0" y="480.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_25E36E2C-9196-4170-8BA3-52DDF55D177E" id="S1364754596597__25E36E2C-9196-4170-8BA3-52DDF55D177E">
+                <dc:Bounds height="30.0" width="30.0" x="843.0" y="602.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_D226B9E0-0194-481E-AAEC-32473D45FEEF" id="S1364754596598__D226B9E0-0194-481E-AAEC-32473D45FEEF">
+                <dc:Bounds height="68.0" width="83.0" x="938.0" y="584.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_4C551546-C127-4CD9-9106-78A3FC8978A6" id="S1364754596599__4C551546-C127-4CD9-9106-78A3FC8978A6">
+                <dc:Bounds height="32.0" width="32.0" x="1115.0" y="601.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_C96534C9-934E-415D-8903-28DA8712B25E" id="S1364754596600__C96534C9-934E-415D-8903-28DA8712B25E">
+                <dc:Bounds height="38.0" width="30.0" x="1018.0" y="489.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_91C1F9A1-0EB9-4FD4-A2A7-99C2E8C34854" id="S1364754596602__91C1F9A1-0EB9-4FD4-A2A7-99C2E8C34854">
+                <dc:Bounds height="68.0" width="83.0" x="811.0" y="250.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_A9E2794B-4C41-429B-9C04-46C5B8741DDC" id="S1364754596603__A9E2794B-4C41-429B-9C04-46C5B8741DDC">
+                <dc:Bounds height="68.0" width="83.0" x="930.0" y="250.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_EA5D13A2-32CB-4F3D-80EF-F0886538C228" isMarkerVisible="true" id="S1364754596604__EA5D13A2-32CB-4F3D-80EF-F0886538C228">
+                <dc:Bounds height="42.0" width="42.0" x="1050.0" y="263.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_8040CF1A-3CAA-4A98-8E94-DD405EF233E9" id="S1364754596605__8040CF1A-3CAA-4A98-8E94-DD405EF233E9">
+                <dc:Bounds height="68.0" width="83.0" x="1108.0" y="144.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_5C0BF369-3360-43C3-9792-3E6492BA7291" isMarkerVisible="true" id="S1364754596606__5C0BF369-3360-43C3-9792-3E6492BA7291">
+                <dc:Bounds height="42.0" width="42.0" x="1208.0" y="263.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_C89D1737-9813-44C2-A5D5-87649AE7AEC6" isExpanded="true" id="S1364754596607__C89D1737-9813-44C2-A5D5-87649AE7AEC6">
+                <dc:Bounds height="228.0" width="451.0" x="1339.0" y="478.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_F9A272EE-D325-44CF-AFFC-4A615D2C9971" id="S1364754596608__F9A272EE-D325-44CF-AFFC-4A615D2C9971">
+                <dc:Bounds height="30.0" width="30.0" x="1396.0" y="602.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_52CCF00D-C0E3-4931-8D4E-6C989E317A07" id="S1364754596609__52CCF00D-C0E3-4931-8D4E-6C989E317A07">
+                <dc:Bounds height="68.0" width="83.0" x="1474.0" y="583.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_2BBAB508-4026-40F7-8FC3-23E68E77EE46" id="S1364754596610__2BBAB508-4026-40F7-8FC3-23E68E77EE46">
+                <dc:Bounds height="32.0" width="32.0" x="1687.0" y="601.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_4134CEB9-F012-4F9E-9EF3-932E18E731E5" id="S1364754596611__4134CEB9-F012-4F9E-9EF3-932E18E731E5">
+                <dc:Bounds height="38.0" width="30.0" x="1546.0" y="487.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_071B5D0A-5225-4E55-9105-8D15169DAC96" id="S1364754596613__071B5D0A-5225-4E55-9105-8D15169DAC96">
+                <dc:Bounds height="68.0" width="83.0" x="1359.0" y="250.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_2A752317-508C-4BB1-9AE7-49FBC7391B2B" id="S1364754596614__2A752317-508C-4BB1-9AE7-49FBC7391B2B">
+                <dc:Bounds height="68.0" width="83.0" x="1489.0" y="250.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_B78F09D7-A493-4FDC-B20C-B251C7405D95" isMarkerVisible="true" id="S1364754596615__B78F09D7-A493-4FDC-B20C-B251C7405D95">
+                <dc:Bounds height="42.0" width="42.0" x="1620.0" y="263.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_DFFBC045-8147-468B-BC85-DAF1134E19CF" id="S1364754596616__DFFBC045-8147-468B-BC85-DAF1134E19CF">
+                <dc:Bounds height="68.0" width="83.0" x="1744.0" y="250.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_B67579E4-E038-4D9D-AA46-A3F9628CADA1" id="S1364754596617__B67579E4-E038-4D9D-AA46-A3F9628CADA1">
+                <dc:Bounds height="32.0" width="32.0" x="1880.0" y="268.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_A5699C3D-74E0-497C-8B62-607B9909A0C9" id="S1364754596618__A5699C3D-74E0-497C-8B62-607B9909A0C9">
+                <dc:Bounds height="38.0" width="30.0" x="1489.0" y="144.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_956694A6-DFD0-4422-800E-A7DF51A627C0" id="S1364754596620__956694A6-DFD0-4422-800E-A7DF51A627C0">
+                <dc:Bounds height="68.0" width="83.0" x="2018.0" y="250.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_78172A06-7EC8-47CC-B49B-01EAD0676195" id="S1364754596621__78172A06-7EC8-47CC-B49B-01EAD0676195">
+                <dc:Bounds height="68.0" width="83.0" x="2241.0" y="250.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_4CFC937C-2E42-4671-859E-42E710931963" id="S1364754596622__4CFC937C-2E42-4671-859E-42E710931963">
+                <dc:Bounds height="32.0" width="32.0" x="2368.0" y="268.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_12A4A22E-9449-4E50-BDFC-AC00C8DE8660" id="S1364754596623__12A4A22E-9449-4E50-BDFC-AC00C8DE8660">
+                <dc:Bounds height="68.0" width="83.0" x="2134.0" y="250.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_44E5E2EF-2B2F-4689-8531-4D451808B0A6" id="S1364754596624__44E5E2EF-2B2F-4689-8531-4D451808B0A6">
+                <dc:Bounds height="38.0" width="30.0" x="254.0" y="545.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6F155721-2EB2-4570-BFE0-E39C0B3EAD82" id="S1364754596625__6F155721-2EB2-4570-BFE0-E39C0B3EAD82">
+                <dc:Bounds height="38.0" width="30.0" x="143.0" y="320.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge bpmnElement="_E2740126-A38E-40E2-9FA9-554778B51381" id="E1364754596630__E2740126-A38E-40E2-9FA9-554778B51381">
+                <di:waypoint x="775.0" y="284.0"/>
+                <di:waypoint x="789.0" y="284.0"/>
+                <di:waypoint x="811.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_79CF3D66-DDC0-4E70-A721-206B98C9106D" id="E1364754596631__79CF3D66-DDC0-4E70-A721-206B98C9106D">
+                <di:waypoint x="2101.0" y="284.0"/>
+                <di:waypoint x="2134.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_7BCC27D0-D619-4895-92F5-4516D9583479" id="E1364754596632__7BCC27D0-D619-4895-92F5-4516D9583479">
+                <di:waypoint x="1442.0" y="272.0"/>
+                <di:waypoint x="1456.0" y="272.0"/>
+                <di:waypoint x="1489.0" y="272.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_F165F4A8-69B1-4B19-A1A4-470BDE12FA77" id="E1364754596633__F165F4A8-69B1-4B19-A1A4-470BDE12FA77">
+                <di:waypoint x="894.0" y="284.0"/>
+                <di:waypoint x="930.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_24A3FEEC-8DE6-42DC-9B85-D076EB8909A4" id="E1364754596634__24A3FEEC-8DE6-42DC-9B85-D076EB8909A4">
+                <di:waypoint x="1021.0" y="618.0"/>
+                <di:waypoint x="1035.0" y="618.0"/>
+                <di:waypoint x="1115.0" y="618.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_BEFA7BF4-D1C2-47CB-B0CD-EF87E541B1BC" id="E1364754596635__BEFA7BF4-D1C2-47CB-B0CD-EF87E541B1BC">
+                <di:waypoint x="1229.0" y="263.0"/>
+                <di:waypoint x="1229.0" y="178.0"/>
+                <di:waypoint x="1192.0" y="178.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_D5635CA0-2E65-458D-A25B-B7EAC7E888E2" sourceElement="S1364754596589__BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA" id="E1364754596636__D5635CA0-2E65-458D-A25B-B7EAC7E888E2">
+                <di:waypoint x="209.0" y="475.0"/>
+                <di:waypoint x="209.0" y="564.0"/>
+                <di:waypoint x="254.0" y="564.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_FE1BBBD3-1730-4BC0-895D-76106317615D" id="E1364754596637__FE1BBBD3-1730-4BC0-895D-76106317615D">
+                <di:waypoint x="1014.0" y="284.0"/>
+                <di:waypoint x="1028.0" y="284.0"/>
+                <di:waypoint x="1050.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_1F31B20E-FE41-440D-9D44-E7437D1639C6" id="E1364754596638__1F31B20E-FE41-440D-9D44-E7437D1639C6">
+                <di:waypoint x="371.0" y="441.0"/>
+                <di:waypoint x="385.0" y="441.0"/>
+                <di:waypoint x="407.0" y="441.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_896FB358-BF3A-4609-8E83-8405D72DEA9B" id="E1364754596639__896FB358-BF3A-4609-8E83-8405D72DEA9B">
+                <di:waypoint x="131.0" y="441.0"/>
+                <di:waypoint x="145.0" y="441.0"/>
+                <di:waypoint x="167.0" y="441.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_222A5787-C138-497B-8638-02121C5E0477" id="E1364754596640__222A5787-C138-497B-8638-02121C5E0477">
+                <di:waypoint x="251.0" y="441.0"/>
+                <di:waypoint x="287.0" y="441.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_0884CEBC-44CE-4BE2-958F-8941946BDA64" id="E1364754596641__0884CEBC-44CE-4BE2-958F-8941946BDA64">
+                <di:waypoint x="1954.0" y="283.0"/>
+                <di:waypoint x="1968.0" y="283.0"/>
+                <di:waypoint x="2018.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_7586D519-92CA-4824-93B9-59E925689D65" targetElement="S1364754596614__2A752317-508C-4BB1-9AE7-49FBC7391B2B" id="E1364754596642__7586D519-92CA-4824-93B9-59E925689D65">
+                <di:waypoint x="1519.0" y="163.0"/>
+                <di:waypoint x="1544.0" y="163.0"/>
+                <di:waypoint x="1544.0" y="250.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_751A4C0A-FC0F-441E-A587-4016BE8101B3" id="E1364754596643__751A4C0A-FC0F-441E-A587-4016BE8101B3">
+                <di:waypoint x="1249.0" y="284.0"/>
+                <di:waypoint x="1359.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_9C46FDB0-2EBD-4B2F-A72A-0189A4D76A73" id="E1364754596644__9C46FDB0-2EBD-4B2F-A72A-0189A4D76A73">
+                <di:waypoint x="1640.0" y="304.0"/>
+                <di:waypoint x="1640.0" y="343.0"/>
+                <di:waypoint x="754.0" y="343.0"/>
+                <di:waypoint x="755.0" y="304.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_F298A83E-5AD6-4BB6-95AF-E5B0A26A51FC" id="E1364754596645__F298A83E-5AD6-4BB6-95AF-E5B0A26A51FC">
+                <di:waypoint x="1108.0" y="178.0"/>
+                <di:waypoint x="1070.0" y="178.0"/>
+                <di:waypoint x="1070.0" y="263.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_C2B6A48C-B636-4186-955B-9C73CD3FA580" targetElement="S1364754596590__D4804AD8-3EE4-47F1-942C-D9EAEA2811F0" id="E1364754596646__C2B6A48C-B636-4186-955B-9C73CD3FA580">
+                <di:waypoint x="285.0" y="564.0"/>
+                <di:waypoint x="329.0" y="564.0"/>
+                <di:waypoint x="329.0" y="475.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_3B161ED4-4C10-4349-9A2D-B4E002D5EC0E" id="E1364754596647__3B161ED4-4C10-4349-9A2D-B4E002D5EC0E">
+                <di:waypoint x="427.0" y="420.0"/>
+                <di:waypoint x="427.0" y="283.0"/>
+                <di:waypoint x="627.0" y="283.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_3654E294-536A-4CD2-9950-11F02657EE60" id="E1364754596648__3654E294-536A-4CD2-9950-11F02657EE60">
+                <di:waypoint x="427.0" y="462.0"/>
+                <di:waypoint x="427.0" y="564.0"/>
+                <di:waypoint x="462.0" y="564.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_9EB2F46F-FA87-4DB3-9EA5-4CBA7FC355B2" targetElement="S1364754596589__BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA" id="E1364754596649__9EB2F46F-FA87-4DB3-9EA5-4CBA7FC355B2">
+                <di:waypoint x="174.0" y="339.0"/>
+                <di:waypoint x="209.0" y="339.0"/>
+                <di:waypoint x="209.0" y="407.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_9DBCFE15-F025-4A3B-A3F7-41BFCFA182D1" sourceElement="S1364754596609__52CCF00D-C0E3-4931-8D4E-6C989E317A07" id="E1364754596650__9DBCFE15-F025-4A3B-A3F7-41BFCFA182D1">
+                <di:waypoint x="1490.0" y="583.0"/>
+                <di:waypoint x="1490.0" y="506.0"/>
+                <di:waypoint x="1546.0" y="506.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_56B35746-D946-481B-95EF-27D2CB8F4D29" id="E1364754596651__56B35746-D946-481B-95EF-27D2CB8F4D29">
+                <di:waypoint x="1827.0" y="284.0"/>
+                <di:waypoint x="1841.0" y="284.0"/>
+                <di:waypoint x="1880.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_CB71865E-954A-4D3D-874F-8DB33A5B391B" id="E1364754596652__CB71865E-954A-4D3D-874F-8DB33A5B391B">
+                <di:waypoint x="2217.0" y="284.0"/>
+                <di:waypoint x="2241.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_4799D2B0-A204-4A08-94ED-796C25D9AE57" id="E1364754596653__4799D2B0-A204-4A08-94ED-796C25D9AE57">
+                <di:waypoint x="1661.0" y="284.0"/>
+                <di:waypoint x="1675.0" y="284.0"/>
+                <di:waypoint x="1744.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_77A40DB9-8B5A-4E50-9138-ADCA63E4A219" id="E1364754596654__77A40DB9-8B5A-4E50-9138-ADCA63E4A219">
+                <di:waypoint x="698.0" y="284.0"/>
+                <di:waypoint x="734.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_62BD6E5E-B5C0-4719-86CE-D5E30A1D128F" id="E1364754596655__62BD6E5E-B5C0-4719-86CE-D5E30A1D128F">
+                <di:waypoint x="873.0" y="618.0"/>
+                <di:waypoint x="887.0" y="618.0"/>
+                <di:waypoint x="938.0" y="618.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_53EFF0AE-C44D-4EA4-A3AF-FA7E52B4CE52" id="E1364754596656__53EFF0AE-C44D-4EA4-A3AF-FA7E52B4CE52">
+                <di:waypoint x="1091.0" y="284.0"/>
+                <di:waypoint x="1208.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_94CD5662-8EB9-4B23-A486-8B6970314AD7" sourceElement="S1364754596598__D226B9E0-0194-481E-AAEC-32473D45FEEF" id="E1364754596657__94CD5662-8EB9-4B23-A486-8B6970314AD7">
+                <di:waypoint x="954.0" y="584.0"/>
+                <di:waypoint x="954.0" y="509.0"/>
+                <di:waypoint x="1018.0" y="508.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_8C74C362-DDEF-48B9-AED2-E4034E917A40" id="E1364754596658__8C74C362-DDEF-48B9-AED2-E4034E917A40">
+                <di:waypoint x="1572.0" y="284.0"/>
+                <di:waypoint x="1586.0" y="284.0"/>
+                <di:waypoint x="1620.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_CF5A1710-35F8-48B6-85FD-A90C99FEC5B3" id="E1364754596659__CF5A1710-35F8-48B6-85FD-A90C99FEC5B3">
+                <di:waypoint x="1426.0" y="617.0"/>
+                <di:waypoint x="1440.0" y="617.0"/>
+                <di:waypoint x="1474.0" y="617.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_9088D441-44C5-462B-8695-47D60A7BC451" id="E1364754596660__9088D441-44C5-462B-8695-47D60A7BC451">
+                <di:waypoint x="2324.0" y="284.0"/>
+                <di:waypoint x="2338.0" y="284.0"/>
+                <di:waypoint x="2368.0" y="284.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_19517CEB-6A0E-4B88-8911-FEEEFE3B55CE" id="E1364754596661__19517CEB-6A0E-4B88-8911-FEEEFE3B55CE">
+                <di:waypoint x="1557.0" y="617.0"/>
+                <di:waypoint x="1571.0" y="617.0"/>
+                <di:waypoint x="1687.0" y="617.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+    <semantic:relationship type="BPSimData">
+        <semantic:extensionElements>
+            <bpsim:BPSimData>
+                <bpsim:Scenario author="Tim Stephenson" id="S1" name="Scenario 1: Main flow without sub-processes">
+                    <bpsim:ScenarioParameters replication="3">
+                        <bpsim:Duration>
+                            <bpsim:DurationParameter value="PT60H"/>
+                        </bpsim:Duration>
+                    </bpsim:ScenarioParameters>
+                    <bpsim:ElementParameters elementRef="_6">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_51BDA265-2FF5-40CB-B68D-1FBF9DAAA74C">
+                        <bpsim:ControlParameters>
+                            <bpsim:InterTriggerTimer>
+                                <bpsim:DurationParameter value="PT24M"/>
+                            </bpsim:InterTriggerTimer>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                        <bpsim:PropertyParameters>
+                            <bpsim:Property name="noOfIssues" type="int">
+                                <bpsim:TruncatedNormalDistribution max="1000" mean="2" min="1" standardDeviation="1"/>
+                            </bpsim:Property>
+                        </bpsim:PropertyParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_071B5D0A-5225-4E55-9105-8D15169DAC96">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                        <bpsim:PropertyParameters>
+                            <bpsim:Property name="noOfIssues">
+                                <bpsim:ExpressionParameter value="getProperty('noOfIssues') - 1"/>
+                            </bpsim:Property>
+                        </bpsim:PropertyParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_8040CF1A-3CAA-4A98-8E94-DD405EF233E9">
+                        <bpsim:PropertyParameters>
+                            <bpsim:Property name="noOfIssues">
+                                <bpsim:ExpressionParameter value="getProperty('noOfIssues') + 1"/>
+                            </bpsim:Property>
+                        </bpsim:PropertyParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_9C46FDB0-2EBD-4B2F-A72A-0189A4D76A73">
+                        <bpsim:ControlParameters>
+                            <bpsim:Condition>
+                                <bpsim:ExpressionParameter value="getProperty('noOfIssues') > 0"/>
+                            </bpsim:Condition>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_4799D2B0-A204-4A08-94ED-796C25D9AE57">
+                        <bpsim:ControlParameters>
+                            <bpsim:Condition>
+                                <bpsim:ExpressionParameter value="getProperty('noOfIssues') = 0"/>
+                            </bpsim:Condition>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_BEFA7BF4-D1C2-47CB-B0CD-EF87E541B1BC">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="0.25"/>
+                            </bpsim:Probability>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_751A4C0A-FC0F-441E-A587-4016BE8101B3">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="0.75"/>
+                            </bpsim:Probability>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_3B161ED4-4C10-4349-9A2D-B4E002D5EC0E">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="0.66"/>
+                            </bpsim:Probability>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_3654E294-536A-4CD2-9950-11F02657EE60">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="0.33"/>
+                            </bpsim:Probability>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_87E52808-857B-45B0-93E8-F6D7AC0B4B3E">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_FA77D7D8-9C02-4006-942A-B003AEDA5E3C">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_B67579E4-E038-4D9D-AA46-A3F9628CADA1">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_4CFC937C-2E42-4671-859E-42E710931963">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                </bpsim:Scenario>
+                <bpsim:Scenario id="S2" inherits="S1" name="Scenario 2: Main and Secondary paths">
+                    <bpsim:ElementParameters elementRef="_2BBAB508-4026-40F7-8FC3-23E68E77EE46">
+                        <bpsim:ControlParameters>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                    <bpsim:ElementParameters elementRef="_F9A272EE-D325-44CF-AFFC-4A615D2C9971">
+                        <bpsim:ControlParameters>
+                            <bpsim:Probability>
+                                <bpsim:FloatingParameter value="0.05"/>
+                            </bpsim:Probability>
+                            <bpsim:InterTriggerTimer>
+                                <bpsim:DurationParameter value="PT0M"/>
+                            </bpsim:InterTriggerTimer>
+                            <bpsim:TriggerCount>
+                                <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                                <bpsim:NumericParameter value="1"/>
+                            </bpsim:TriggerCount>
+                        </bpsim:ControlParameters>
+                    </bpsim:ElementParameters>
+                </bpsim:Scenario>
+            </bpsim:BPSimData>
+        </semantic:extensionElements>
+        <semantic:source>_1364754596385</semantic:source>
+        <semantic:target>_1364754596385</semantic:target>
+    </semantic:relationship>
+</semantic:definitions>
+

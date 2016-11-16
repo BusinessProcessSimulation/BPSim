@@ -1,0 +1,561 @@
+<?xml version="1.0"?>
+<bpsim:BPSimData xmlns:bpsim="http://www.bpsim.org/schemas/2.0">
+  <bpsim:Scenario xmlns:lsim="urn:lanner.simulation.lsim.model.data" result="default" vendor="Lanner Group L-SIM " name="default_results" id="default_results">
+    <bpsim:ElementParameters elementRef="_57EE71B2-5287-46A2-9B24-83A68131714C">
+      <bpsim:TimeParameters>
+        <bpsim:ProcessingTime>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="50.016786778264965"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="48.39849830658434"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="43.67869419208594"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="50.079858786509334"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="48.05921396296819"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="42.30745511585745"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="51.6665321956698"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="49.16169589479101"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="42.80085729761531"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="51.87107452682821"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="49.370854343083586"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="43.68862862847848"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="51.717398403915006"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="49.90604958101441"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="45.95045753779306"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="40.053024303159134"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="27.70124911535561"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="32.30443280854689"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="29.133196559239536"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="27.70124911535561"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="32.30443280854689"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="29.133196559239536"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="27.70124911535561"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="30.733381073407372"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="29.133196559239536"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="27.70124911535561"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="30.733381073407372"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="29.133196559239536"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="27.70124911535561"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="30.733381073407372"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="60.0"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="60.0"></bpsim:FloatingParameter>
+        </bpsim:ProcessingTime>
+      </bpsim:TimeParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_F366069F-C180-4D69-B2BF-4124649EC36F">
+      <bpsim:TimeParameters>
+        <bpsim:ProcessingTime>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="9.978999864664862"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="10.04179369932615"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="10.233201974480261"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="9.946439216289749"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="9.949061040024919"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="10.13608729336614"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="9.993010575016545"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="9.972216995490204"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="10.048820390311661"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="9.974990855342623"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="10.002406517405078"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="10.059171346865904"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="9.958073120384176"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="10.004542310984673"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="10.06533013313283"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="10.555498373907085"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="10.184040590054394"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="10.3421174768323"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="10.555498373907085"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="10.184040590054394"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="10.3421174768323"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="10.555498373907085"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="10.372122901997045"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="10.3421174768323"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="10.555498373907085"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="10.48065214745725"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="10.744569666731422"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="10.555498373907085"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="10.48065214745725"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="10.744569666731422"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="9.175373639801649"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="9.842531870648713"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="9.938949776081017"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="9.175373639801649"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="9.759052693748004"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="9.935617241258683"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="9.175373639801649"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="9.585535488263986"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="9.59718383879408"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="9.175373639801649"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="9.585535488263986"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="9.59718383879408"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="9.175373639801649"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="9.585535488263986"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="9.59718383879408"></bpsim:FloatingParameter>
+        </bpsim:ProcessingTime>
+      </bpsim:TimeParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316">
+      <bpsim:TimeParameters>
+        <bpsim:ProcessingTime>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="56.1056361905508"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="56.76452279720718"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="57.241571154457745"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="56.1056361905508"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="54.2336903691903"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="56.364326240444484"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="56.1056361905508"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="54.2336903691903"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="55.71737188860095"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="55.62920767888659"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="54.2336903691903"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="55.71737188860095"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="55.62920767888659"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="54.2336903691903"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="55.71737188860095"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="64.2024836816725"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="63.88859313921425"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="63.35515851433445"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="64.2024836816725"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="64.29106688494932"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="64.49028899390453"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="65.74008523033035"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="64.31857487719117"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="64.49028899390453"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="65.74008523033035"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="64.31857487719117"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="64.49028899390453"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="65.74008523033035"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="65.97198573521632"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="64.49028899390453"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="60.53401411005559"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="60.361524484762235"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="60.144127268588875"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="59.993266853363075"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="60.335247917587125"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="60.39153734839032"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="60.14133833269366"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="60.447248517526305"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="60.14091258214897"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="60.040111008296925"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="60.35761634332277"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="60.00728596983596"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="60.16469014263752"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="60.38883849300133"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="60.07836283731644"></bpsim:FloatingParameter>
+        </bpsim:ProcessingTime>
+      </bpsim:TimeParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6">
+      <bpsim:TimeParameters>
+        <bpsim:ProcessingTime>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="4.674595708067102"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="4.663322329036532"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="4.5451878149213485"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="4.674595708067102"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="4.564235667289722"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="4.4886943074002374"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="4.674595708067102"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="4.452026191983123"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="4.4886943074002374"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="4.674595708067102"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="4.444017959708162"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="4.4886943074002374"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="4.510045426539364"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="4.444017959708162"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="4.3900661369339105"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="5.280681051918123"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="5.4804789783524654"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="5.366065519143149"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="5.610634534791302"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="5.4804789783524654"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="5.436682198849326"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="5.610634534791302"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="5.4804789783524654"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="5.436682198849326"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="5.622866983614131"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="5.4804789783524654"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="5.436682198849326"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="5.622866983614131"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="5.500820763680622"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="5.4490325410779406"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="5.008223637681185"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="5.0266360920101505"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="4.948073420643851"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="5.037097919830683"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="4.959052762835711"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="4.955158649808619"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="5.068000570326889"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="4.95365533453163"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="4.969336366454982"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="5.0717407252084525"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="4.950914877612894"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="4.970719324575081"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="5.02812649829243"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="4.976292970050288"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="4.966957219349893"></bpsim:FloatingParameter>
+        </bpsim:ProcessingTime>
+      </bpsim:TimeParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="25"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="26"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="27"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="52"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="53"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="54"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="79"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="80"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="81"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="102"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="106"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="108"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="128"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="131"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="136"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_ACDC390F-49FD-43A3-ACD6-1EBB8074801D">
+      <bpsim:TimeParameters>
+        <bpsim:ProcessingTime>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="17.268995284845005"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="17.207003727220382"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="17.831076097694478"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="17.016819839803816"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="15.601167477813306"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="16.884188374477276"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="16.16819577939168"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="15.601167477813306"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="16.766197277983565"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="15.586372870231344"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="15.601167477813306"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="16.6396654762857"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="15.586372870231344"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="15.601167477813306"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="16.6396654762857"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="23.67506545553772"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="24.12386432526222"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="24.024088770499645"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="23.67506545553772"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="24.12386432526222"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="24.357509569631816"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="23.67506545553772"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="24.12386432526222"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="24.973520061846102"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="23.67506545553772"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="24.507063159772315"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="24.973520061846102"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="24.41039484363"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="24.507063159772315"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="24.973520061846102"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="20.18284483926213"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="19.98694480632163"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="19.977231484917223"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="20.003482109079577"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="19.755955011270096"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="19.920196927106307"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="19.993131505451615"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="19.775741444424735"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="19.944881747726228"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="19.91170027741618"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="19.837478604584984"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="19.931007535030076"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="19.918502164842298"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="19.99104696673863"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="20.10509036190392"></bpsim:FloatingParameter>
+        </bpsim:ProcessingTime>
+      </bpsim:TimeParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_6">
+      <bpsim:TimeParameters>
+        <bpsim:ProcessingTime>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="242.45160160085845"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="229.65833749003139"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="234.82114957931554"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="242.45160160085845"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="229.65833749003139"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="234.82114957931554"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="242.45160160085845"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="229.65833749003139"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="234.82114957931554"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="242.45160160085845"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="235.04907815518982"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="237.1944383052853"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="242.45160160085845"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="237.58941809236444"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="239.66850498180565"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="156.31498121792498"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="158.6266964235781"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="153.37957801237587"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="151.70927808847068"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="155.80535175719695"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="153.37957801237587"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="150.1256060684957"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="155.80535175719695"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="152.97074617362568"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="150.1256060684957"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="155.80535175719695"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="152.97074617362568"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="150.1256060684957"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="151.77814885736643"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="152.97074617362568"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="192.29979164052583"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="184.82682344160045"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="178.2853733545663"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="193.26402530123715"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="182.50239842600703"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="177.08810125744802"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="191.88531120805078"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="182.53882865691324"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="177.58396011469242"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="188.75858469842774"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="184.06070590897588"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="179.14520399867084"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="186.59420917215346"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="183.97898505556424"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="179.34091698431675"></bpsim:FloatingParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="16"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="17"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="20"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="43"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="44"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="45"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="70"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="73"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="72"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="94"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="99"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="97"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="119"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="124"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="126"></bpsim:NumericParameter>
+        </bpsim:ProcessingTime>
+      </bpsim:TimeParameters>
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="25"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="26"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="27"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="52"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="53"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="54"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="79"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="80"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="81"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="102"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="106"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="108"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="128"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="131"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="136"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_2017EC19-4BD5-40D7-9014-E7D337A68E01">
+      <bpsim:TimeParameters>
+        <bpsim:ProcessingTime>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="22.316517747096043"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="22.039496626616454"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="22.312251256030436"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="22.316517747096043"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="22.039496626616454"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="22.312251256030436"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="22.35369733134371"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="22.039496626616454"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="22.312251256030436"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="22.35369733134371"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="22.21729964216661"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="22.312251256030436"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="23.023375425632366"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="22.21729964216661"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="22.312251256030436"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="17.6242441031182"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="17.371726898231685"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="18.267687430084436"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="17.6242441031182"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="17.371726898231685"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="18.186520263437046"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="17.56537920232722"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="17.371726898231685"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="17.28485375233481"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="17.56537920232722"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="17.371726898231685"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="17.28485375233481"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="17.56537920232722"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="17.371726898231685"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="17.28485375233481"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="20.06771449180192"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="19.696709907907103"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="20.165686179871376"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="20.008983394054468"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="19.928803456945005"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="20.020610284149715"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="19.846199507802737"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="19.976753675710878"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="19.957246483424825"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="19.86961349598328"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="20.015355413933467"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="20.018646509398508"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="19.962943845147887"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="20.008155873750898"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="19.940926058824665"></bpsim:FloatingParameter>
+        </bpsim:ProcessingTime>
+      </bpsim:TimeParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_6E1A332C-9187-4C4A-BD0F-27167F940786">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="7"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="5"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="5"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="20"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="13"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="10"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="31"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="21"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="17"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="37"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="31"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="25"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="43"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="38"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="31"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A">
+      <bpsim:TimeParameters>
+        <bpsim:ProcessingTime>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="24.118121282610673"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="24.295966538697655"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="22.50705024919685"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="23.769347768264993"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="18.864980612671957"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="22.36016770435799"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="18.296446824743498"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="18.864980612671957"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="20.7072737005376"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="18.296446824743498"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="18.864980612671957"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="18.644024389679544"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="18.296446824743498"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="18.864980612671957"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="18.644024389679544"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="36.692514962011444"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="36.390009943498654"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="35.952497191096995"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="46.20100908262174"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="36.390009943498654"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="36.9387094171509"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="46.20100908262174"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="36.510394665597005"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="37.6518158553871"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="46.20100908262174"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="37.24342446546916"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="38.84470059760952"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="46.20100908262174"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="37.24342446546916"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="38.84470059760952"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="29.8733566528496"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="29.52923230375046"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="30.890999293792817"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="30.71379830634175"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="29.595352426223368"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="30.771092572253128"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="30.20365543029793"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="29.943906250076544"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="30.58455134597284"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="30.051808619936704"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="30.379730979750036"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="30.54945912318052"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="29.916930482952402"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="30.25537483054554"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="30.60994751337686"></bpsim:FloatingParameter>
+        </bpsim:ProcessingTime>
+      </bpsim:TimeParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_A2A06973-DC30-4BCF-BF0F-1FD60D68E1EB">
+      <bpsim:ControlParameters>
+        <bpsim:TriggerCount>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="9"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="12"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="15"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="23"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="31"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="35"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="39"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="52"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="55"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="57"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="68"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="72"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="76"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="86"></bpsim:NumericParameter>
+          <bpsim:NumericParameter result="count" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="95"></bpsim:NumericParameter>
+        </bpsim:TriggerCount>
+      </bpsim:ControlParameters>
+    </bpsim:ElementParameters>
+    <bpsim:ElementParameters elementRef="_C94EFA57-E605-4564-BFC4-22A84C660A6A">
+      <bpsim:TimeParameters>
+        <bpsim:ProcessingTime>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="38.58768278666736"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="37.26993426693798"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="39.20591036000269"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="38.58768278666736"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="37.573456436067204"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="39.20591036000269"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="38.58768278666736"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="37.573456436067204"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="39.20591036000269"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="38.58768278666736"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="37.573456436067204"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="39.20591036000269"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="38.58768278666736"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="37.573456436067204"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="max" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="39.20591036000269"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="24.720413408276556"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="24.6705300582976"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="20.260795071846303"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="19.189405404231252"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="24.34725598792238"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="20.260795071846303"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="19.189405404231252"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="24.34725598792238"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="18.482366457249782"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="19.189405404231252"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="23.667291719789546"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="18.482366457249782"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="18.19606904604143"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="20.49090707840719"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="min" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="18.482366457249782"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-01T17:00:00" value="31.242504714384996"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-01T17:00:00" value="31.02579308730991"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-01T17:00:00" value="29.192976647830516"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T01:00:00" value="30.744797870809727"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T01:00:00" value="30.885168307759752"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T01:00:00" value="29.14841338237674"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T09:00:00" value="30.401944323639825"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T09:00:00" value="30.965613224242507"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T09:00:00" value="29.4761602494397"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-02T17:00:00" value="30.40608361201364"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-02T17:00:00" value="30.556046289280122"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-02T17:00:00" value="30.019558432546688"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="0" resultTimeStamp="2016-01-03T01:00:00" value="30.09657408651539"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="1" resultTimeStamp="2016-01-03T01:00:00" value="30.50660871227805"></bpsim:FloatingParameter>
+          <bpsim:FloatingParameter result="mean" instance="2" resultTimeStamp="2016-01-03T01:00:00" value="29.989060413300642"></bpsim:FloatingParameter>
+        </bpsim:ProcessingTime>
+      </bpsim:TimeParameters>
+    </bpsim:ElementParameters>
+  </bpsim:Scenario>
+</bpsim:BPSimData>
